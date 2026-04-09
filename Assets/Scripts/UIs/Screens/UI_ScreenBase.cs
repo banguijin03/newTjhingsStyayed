@@ -10,15 +10,10 @@ public struct UIClaim
 
 	public UIBase Execute()
 	{
-		//UI 만들어 줘! => 예외가 있을 수 있음!
-		//                이미... 있는데?
 		UIBase result = UIManager.ClaimGetUI(uiType);
-		//찾은게 없다!                 만들어!
 		if (!result) result = UIManager.ClaimCreateUI(uiType, prefabName);
-		//만든게 없다!    없네..
 		if (!result) return result;
 		
-		//대상이 오픈 가능한 친구라면
 		if(result is IOpenable openTarget)
 		{
 			if(isOpen) openTarget.Open();
@@ -29,13 +24,19 @@ public struct UIClaim
 	}
 }
 
-public class UI_ScreenBase : UIBase
+public class UI_ScreenBase : UIBase, IOpenable
 {
 	[SerializeField] UIClaim[] requiredUI;
 
-	public override void Registration(UIManager manager)
+	public bool IsOpen => gameObject.activeSelf;
+	public void Open() => gameObject.SetActive(true);
+    public void Close() => gameObject.SetActive(false);
+    public void Toggle() => gameObject.SetActive(!IsOpen); 
+
+    public override void Registration(UIManager manager)
 	{
 		base.Registration(manager);
+		if (requiredUI is null) return;
 		foreach (UIClaim currentClaim in requiredUI)
 		{
 			currentClaim.Execute();

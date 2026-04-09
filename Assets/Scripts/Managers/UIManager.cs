@@ -5,17 +5,9 @@ using UnityEngine.UI;
 
 public enum UIType
 {
-	None, Loading, Title, Movable, Menu, Info,
+	None, Loading, Title, Option, Movable, Menu, Info, Inside,
 	_Length
 }
-
-//팝업이 일어나는 "이벤트"가 발생할 것이다
-//델리게이트는 => 스킬을 무한히 배울 수 있는 친구!
-//A스킬을 쓰면 => 슬라임
-//B스킬을 쓰면 => 고블린
-//A스킬과 B스킬을 가르쳐놨다 => 실행을 시키면 결과는 => 고블린 슬라임 => X
-//맨 마지막 결과만 알려줘요!
-//실행하면 고블린이나온다!
 public delegate void PopUpEvent(string title, string context, string confirm);
 
 public class UIManager : ManagerBase
@@ -25,22 +17,24 @@ public class UIManager : ManagerBase
 	Canvas _mainCanvas;
 	public Canvas MainCanvas => _mainCanvas;
 
+	UIBase _movableScreen;
+
 	GraphicRaycaster _raycaster;
 	public GraphicRaycaster Raycaster => _raycaster;
 
-	//어떤 창을 열어주세요!
-	//         이 타입  어떤 오브젝트!
 	Dictionary<UIType, UIBase> uiDictionary = new();
 
 	Rect _uiBoundary;
 	public static Rect UIBoundary => GameManager.Instance?.UI?._uiBoundary ?? Rect.zero;
+
+	UIType _currentScreenType;
+	public static UIType CurrentScreen => GameManager.Instance?.UI?._currentScreenType ?? UIType.None;
 
 	float _uiScale = 1.0f;
 	public static float UIScale => GameManager.Instance?.UI?._uiScale ?? 1.0f;
 
 	public IEnumerator Initialize(GameManager newManager)
 	{
-		//GameObject.FindGameObjectWithTag("MainCanvas");
 		SetMainCanvas(GetComponentInChildren<Canvas>());
 		SetUI(UIType.Loading, GetComponentInChildren<UI_LoadingScreen>());
 		yield return null;
@@ -48,13 +42,39 @@ public class UIManager : ManagerBase
 
 	protected override IEnumerator OnConnected(GameManager newManager)
 	{
-		UIBase movableUI = CreateUI(UIType.Movable, "MovableScreen");
+		_movableScreen = CreateUI(UIType.Movable, "MovableScreen");
+		GameObject screenSwitcher = new GameObject("ScreenSwitcher");
+		RectTransform switcherTransform = screenSwitcher.AddComponent<RectTransform>();
+		//메인 캔버스에 넣기
+		switcherTransform.SetParent(MainCanvas.transform);
+		//캔버스중 맨 위로 올려주기
+		switcherTransform.SetAsFirstSibling();
+        //anchor를 stretch를 -stretch로
+        switcherTransform.anchorMin = Vector3.zero;
+		switcherTransform.anchorMax = Vector3.one;
+		//여백을 0 0 0 0 
+		switcherTransform.offsetMin = Vector3.zero;
+		switcherTransform.offsetMax = Vector3.zero;
+		//크기를 1로
+		switcherTransform.localScale = Vector3.one;
+
+        //시험용 필요한거 부름/ ("", switcherTransform)이면 switcherTransform의 자식
+        CreateUI(UIType.Title, "TitleScreen", switcherTransform);
+		CreateUI(UIType.Option, "OptionScreen", switcherTransform);
+		CreateUI(UIType.Inside, "InsideScreen", switcherTransform);
+		CreateUI(UIType.Menu, "MenuWindow", switcherTransform);
+
+        //switcherTransform의 자식들은 끈다
+        foreach (Transform currentTransform in switcherTransform)
+		{
+			currentTransform.gameObject.SetActive(false);
+		}
+
 		yield return null;
 	}
 
 	protected override void OnDisconnected()
 	{
-		//싹 다 나가!
 		UnSetAllUI();
 	}
 
@@ -80,57 +100,43 @@ public class UIManager : ManagerBase
 		}
 	}
 
-	protected UIBase CreateUI(UIType wantType, string wantName)
+	protected UIBase CreateUI(UIType wantType, string wantName, Transform parent)
 	{
-		GameObject instance = ObjectManager.CreateObject(wantName, _mainCanvas.transform);
+		GameObject instance = ObjectManager.CreateObject(wantName, parent);
 		UIBase result = instance?.GetComponent<UIBase>();
 		return SetUI(wantType, result);
 	}
-	public static UIBase ClaimCreateUI(UIType wantType, string wantName) => GameManager.Instance?.UI?.CreateUI(wantType,wantName);
-
-	protected void UnSetAllUI() // 싹 다 해고야
+    protected UIBase CreateUI(UIType wantType, string wantName)
 	{
-		foreach(UIBase ui in uiDictionary.Values) //애들 전부 돌면서
+		UIBase result = CreateUI(wantType, wantName, MainCanvas?.transform);
+		if (result?.GetComponentInChildren<UI_DraggableWindow>())
 		{
-			UnsetUI(ui);//나가라고 해주기!
-						//여기에서 나가라고 할 때마다 Dictionary에서 빼려고 하시는 분들이 있어요!
-						//안되는 이유!
-						//uiDictionary.Remove(wantType);
-						//제거를 하는 경우 uiDictionary의 모양이 달라져서 모두를 돌다가...?
-						//A,B,C,D,E,F
-						//0 1 2 3 4 5 : 6명
-
-						//A,B,C,D,E,F
-						//0
-						//B,C,D,E,F
-
-						//B,C,D,E,F
-						//  1
-						//B, ,D,E,F
-
-						//B,D,E,F
-						//    2
-						//B,D, ,F
-
-						//B,D,F
-						//      3
+			_movableScreen?.SetChild(result.gameObject);
 		}
-		//다 나갔으니까 직원 명부를 버려버림!
+		return result;
+	}
+
+    public static UIBase ClaimCreateUI(UIType wantType, string wantName) => GameManager.Instance?.UI?.CreateUI(wantType, wantName);
+
+	protected void UnSetAllUI() 
+	{
+		foreach(UIBase ui in uiDictionary.Values) 
+		{
+			UnsetUI(ui);
+		}
 		uiDictionary.Clear();
 	}
-	protected void UnsetUI(UIType wantType) //담당 공무원의 부서랑 직책만 알고 있는 경우
+	protected void UnsetUI(UIType wantType) 
 	{
-		//그 직원을 찾아야 함
-		//담당 공무원의 이름을 알고 있는 경우로 이동하시오.
 		if(uiDictionary.TryGetValue(wantType, out UIBase found))
 		{
 			//처리하고
 			UnsetUI(found);
-			//너 해고야.
+			//지움
 			uiDictionary.Remove(wantType);
 		}
 	}
-	protected void UnsetUI(UIBase wantUI) //담당 공무원의 이름을 알고 있는 경우
+	protected void UnsetUI(UIBase wantUI) 
 	{
 		if(!wantUI) return;
 
@@ -206,6 +212,14 @@ public class UIManager : ManagerBase
 		return result;
 	}
 	public static UIBase ClaimToggleUI(UIType wantType)					=> GameManager.Instance?.UI?.ToggleUI(wantType);
+
+	protected UIBase OpenScreen(UIType wantType)
+	{
+		CloseUI(CurrentScreen);			//1. 기존 스크린 닫음
+		_currentScreenType = wantType;	//2. 새로운 타입 설정
+		return OpenUI(wantType);		//3. 열기
+	}
+	public static UIBase ClaimOpenScreen(UIType wantType) => GameManager.Instance?.UI?.OpenScreen(wantType);
 
 	public static void ClaimPopUp(string title, string context, string confirm)
 	{
