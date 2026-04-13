@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public enum UIType
 {
 	None, Loading, Title, Option, Movable, Menu, Info, Inside,
-	_Length
+	Option_1, Option_2, Option_3, Option_4, Option_5, Option_6,
+
+    _Length
 }
 public delegate void PopUpEvent(string title, string context, string confirm);
 
@@ -63,6 +65,12 @@ public class UIManager : ManagerBase
 		CreateUI(UIType.Option, "OptionScreen", switcherTransform);
 		CreateUI(UIType.Inside, "InsideScreen", switcherTransform);
 		CreateUI(UIType.Menu, "MenuWindow", switcherTransform);
+		CreateUI(UIType.Option_1, "Option1_Screen", switcherTransform);
+		CreateUI(UIType.Option_2, "Option2_Screen", switcherTransform);
+		CreateUI(UIType.Option_3, "Option3_Screen", switcherTransform);
+		CreateUI(UIType.Option_4, "Option4_Screen", switcherTransform);
+		CreateUI(UIType.Option_5, "Option5_Screen", switcherTransform);
+		CreateUI(UIType.Option_6, "Option6_Screen", switcherTransform);
 
         //switcherTransform의 자식들은 끈다
         foreach (Transform currentTransform in switcherTransform)
