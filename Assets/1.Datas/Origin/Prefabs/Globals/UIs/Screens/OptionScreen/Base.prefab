@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5244898611753534149}
   - component: {fileID: 899609970572797947}
   - component: {fileID: 3075275180456793887}
+  - component: {fileID: 7685456390270683896}
   m_Layer: 5
   m_Name: Base
   m_TagString: Untagged
@@ -76,6 +77,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7685456390270683896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711398885917539225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc158b147f68df24ba2297ba5ad27cfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI_BaseScreen
+  requiredUI: []
 --- !u!1 &1416429582857941980
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,7 +232,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2037570220163092762, guid: 7ed04ebd546d5ad41984e69a8b57e815, type: 3}
+  m_Sprite: {fileID: 6622059942929159720, guid: 7ed04ebd546d5ad41984e69a8b57e815, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

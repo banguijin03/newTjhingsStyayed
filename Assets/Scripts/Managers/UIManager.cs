@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public enum UIType
 {
-	None, Loading, Title, Option, Movable, Menu, Info, Inside,
-	Option_1, Option_2, Option_3, Option_4, Option_5, Option_6,
-
+	None, Loading, Title, Option, Movable, Menu, Info, Inside, GameQuit,
+	Base, Option_1, Option_2, Option_3, Option_4, Option_5, Option_6,
     _Length
 }
 public delegate void PopUpEvent(string title, string context, string confirm);
@@ -16,10 +16,20 @@ public class UIManager : ManagerBase
 {
 	public static event PopUpEvent OnPopUp;
 
+	readonly KeyValuePair<UIType, string>[] globalScreenArray =
+	{
+	new(UIType.Title, "TitleScreen"),
+	new(UIType.Option, "OptionScreen"),
+	new(UIType.Inside, "InsideScreen"),
+	new(UIType.Menu, "MenuWindow"),
+};
+
 	Canvas _mainCanvas;
 	public Canvas MainCanvas => _mainCanvas;
 
 	UIBase _movableScreen;
+	RectTransform switcherTransform;
+	RectTransform createdTransform;
 
 	GraphicRaycaster _raycaster;
 	public GraphicRaycaster Raycaster => _raycaster;
@@ -42,45 +52,54 @@ public class UIManager : ManagerBase
 		yield return null;
 	}
 
+	public RectTransform CreateFullScreen(string wantName)
+	{
+		GameObject instance = new GameObject(wantName);
+		RectTransform result = instance.AddComponent<RectTransform>();
+		//메인 캔버스에 넣기
+		result.SetParent(MainCanvas.transform);
+		//캔버스중 맨 위로 올려주기
+		result.SetAsFirstSibling();
+        //anchor를 stretch를 -stretch로
+        result.anchorMin = Vector3.zero;
+		result.anchorMax = Vector3.one;
+		//여백을 0 0 0 0 
+		result.offsetMin = Vector3.zero;
+		result.offsetMax = Vector3.zero;
+		//크기를 1로
+		result.localScale = Vector3.one;
+		return result;
+	}
+
 	protected override IEnumerator OnConnected(GameManager newManager)
 	{
-		_movableScreen = CreateUI(UIType.Movable, "MovableScreen");
-		GameObject screenSwitcher = new GameObject("ScreenSwitcher");
-		RectTransform switcherTransform = screenSwitcher.AddComponent<RectTransform>();
-		//메인 캔버스에 넣기
-		switcherTransform.SetParent(MainCanvas.transform);
-		//캔버스중 맨 위로 올려주기
-		switcherTransform.SetAsFirstSibling();
-        //anchor를 stretch를 -stretch로
-        switcherTransform.anchorMin = Vector3.zero;
-		switcherTransform.anchorMax = Vector3.one;
-		//여백을 0 0 0 0 
-		switcherTransform.offsetMin = Vector3.zero;
-		switcherTransform.offsetMax = Vector3.zero;
-		//크기를 1로
-		switcherTransform.localScale = Vector3.one;
+		createdTransform = CreateFullScreen("CreatedUI");
+		_movableScreen = CreateUI(UIType.Movable, "MovableScreen", MainCanvas?.transform);
 
-        //시험용 필요한거 부름/ ("", switcherTransform)이면 switcherTransform의 자식
-        CreateUI(UIType.Title, "TitleScreen", switcherTransform);
-		CreateUI(UIType.Option, "OptionScreen", switcherTransform);
-		CreateUI(UIType.Inside, "InsideScreen", switcherTransform);
-		CreateUI(UIType.Menu, "MenuWindow", switcherTransform);
-		CreateUI(UIType.Option_1, "Option1_Screen", switcherTransform);
-		CreateUI(UIType.Option_2, "Option2_Screen", switcherTransform);
-		CreateUI(UIType.Option_3, "Option3_Screen", switcherTransform);
-		CreateUI(UIType.Option_4, "Option4_Screen", switcherTransform);
-		CreateUI(UIType.Option_5, "Option5_Screen", switcherTransform);
-		CreateUI(UIType.Option_6, "Option6_Screen", switcherTransform);
+		switcherTransform = CreateFullScreen("ScreenSwitcher");
 
         //switcherTransform의 자식들은 끈다
-        foreach (Transform currentTransform in switcherTransform)
+        foreach (var currentPair in globalScreenArray)
 		{
-			currentTransform.gameObject.SetActive(false);
+			UIBase created = CreateUI(currentPair.Key, currentPair.Value, switcherTransform);
+			if (created is IOpenable asOpenable) asOpenable.Close();
+		}
+
+		RectTransform changerTransform = CreateFullScreen("ScreenChanger");
+		changerTransform.SetAsLastSibling();
+
+		GameObject instance = ObjectManager.CreateObject("ScreenChanger", changerTransform);
+		ObjectManager.CreateObject("ScreenChanger", changerTransform);
+		if(instance.TryGetComponent(out UI_ScreenChanger asChanger))
+		{
+			asChanger.ChangeStart();
+
+			yield return new WaitForSeconds(3);
+			asChanger.ChangeEnd();
 		}
 
 		yield return null;
 	}
-
 	protected override void OnDisconnected()
 	{
 		UnSetAllUI();
@@ -116,7 +135,7 @@ public class UIManager : ManagerBase
 	}
     protected UIBase CreateUI(UIType wantType, string wantName)
 	{
-		UIBase result = CreateUI(wantType, wantName, MainCanvas?.transform);
+		UIBase result = CreateUI(wantType, wantName, createdTransform ?? MainCanvas.transform);
 		if (result?.GetComponentInChildren<UI_DraggableWindow>())
 		{
 			_movableScreen?.SetChild(result.gameObject);
@@ -138,9 +157,7 @@ public class UIManager : ManagerBase
 	{
 		if(uiDictionary.TryGetValue(wantType, out UIBase found))
 		{
-			//처리하고
 			UnsetUI(found);
-			//지움
 			uiDictionary.Remove(wantType);
 		}
 	}
@@ -160,19 +177,11 @@ public class UIManager : ManagerBase
 	}
 	protected UIBase SetUI(UIType wantType, UIBase wantUI)
 	{
-		//Set UI를 하려고 하는데 문제가 무엇일까!
-		//InventoryType, InventoryInstance
-		if (wantUI == null) return null; // 승상께서 나를 더 필요로 하시지 않는구나
+		if (wantUI == null) return null;
 
-		//어? 뭐야? 이미 Inventory는 있는데? 너는 누구냐! => 서생원
-		//일단 문전박대 => 프로그래밍에서는요? 똑같은 기능을 하는 친구면
-		//음.. 너가 원본인 건 무슨 상관인데?
-		//뒤이어서 들어온 친구는 치워버리겠다!
 		if (uiDictionary.TryGetValue(wantType, out UIBase origin)) return origin;
 
-		//두 가지의 시련을 모두 통과하다니. 너는 등록될 수 있는 자격을 갖추었다.
 		uiDictionary.Add(wantType, wantUI);
-		//등록 완!
 		return SetUI(wantUI);
 	}
 	public static UIBase ClaimSetUI(UIBase wantUI)						=> GameManager.Instance?.UI?.SetUI(wantUI);
@@ -188,18 +197,11 @@ public class UIManager : ManagerBase
 
 	protected UIBase OpenUI(UIType wantType)
 	{
-		//Result가 누군지 전혀 모름!  리스코프 치환 원칙
-		//IOpenable이면 열게 해준다! 세부 요소는 모르겠는데, 상위 요소만으로 실행하기
 		UIBase result = GetUI(wantType);
-		//이게 "열 수 있는"인 건 어떻게 확인할까요?
-		//IOpenable인지 체크해보면 열 수 있는지 알 수 있습니다.
-		//IOpenable로서 활동 할 수 있으면 IOpenable
-		//result는 IOpenable인 opener인가?
+		
 		if(result is IOpenable asOpenable) asOpenable.Open();
+		if (result) EventSystem.current.SetSelectedGameObject(result.gameObject);
 
-		//아랫줄이랑 같은 의미예요!
-		//IOpenable opener = result as IOpenable;
-		//if(opener != null) opener.Open();
 		return result;
 	}
 	public static UIBase ClaimOpenUI(UIType wantType)					=> GameManager.Instance?.UI?.OpenUI(wantType);

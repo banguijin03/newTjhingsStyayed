@@ -2,15 +2,11 @@ using System.Collections;
 using UnityEngine;
 
 public delegate void InitializeEvent();
-//                                이전 시간으로부터 얼마나 지났는지
-//시속 3km/h로 달리는 당신, 1.5시간 뒤에 당신은 얼마나 움직일 것인가?
-//4.5km를 이동해야 한다!
 public delegate void UpdateEvent(float deltaTime);
 public delegate void DestroyEvent();
 
 public class GameManager : MonoBehaviour
 {
-	//Static : 프로그램에서 단 하나, 어디서든지 접근 가능!
 	static GameManager _instance;
 	public static GameManager Instance => _instance;
 
@@ -41,7 +37,7 @@ public class GameManager : MonoBehaviour
 	InputManager _input;
 	public InputManager	Input => _input;
 
-	IEnumerator initializing; //초기화 중 코루틴!
+	IEnumerator initializing; 
 
 	public static event InitializeEvent	OnInitializeManager;
 	public static event InitializeEvent	OnInitializeController;
@@ -58,61 +54,23 @@ public class GameManager : MonoBehaviour
 
 	bool isLoading = true;
 	bool isPlaying = true;
-
-	//Awake		: 이 친구가 시작할 때 (아침에 눈을 뜸)
-	//OnEnabled : 이 친구가 시작할 때 (정신 차림) => 여러번 실행도 된다
-	//OnDisabled: 기절
-	//Reset		: 일 시작하기 위해 초기화 준비
-	//Start		: 이 친구가 시작할 때 (하루의 시작)
 	void Awake()
     {
-        //게임매니저가 일어나서 제일 처음에 할 일
-		//진정한 게임 매니저를 가르는 목숨을 건 사투
-		//게임 매니저가.. 둘이에요
-		//둘 중 하나만 진정한 게임 매니저!
-		//하늘 아래 두 개의 태양은 있을 수 없습니다
-		//먼저 온 애를 인정한다.
-		//먼저 온 애를 죽이고 간다.
-		//하던 놈을 그대로 유지하는 것이 더 좋음!
-		//예를 들어서, 국가에 회군이 생겼음
-		//게임하는 중간에 갑자기 새로운 세력이 생겼음!
-		//만약 원래 있던 애가 죽게 만들면 => 새로운 국가가 생김
-		//=>국가 정비를 처음부터 다시 해야 함
-		if(Instance == null) //지금 왕이 없음
+		if(Instance == null) 
 		{
-			//내가 바로 이 시대의 새로운 왕이다!
 			_instance = this;
 		}
-		else //지금 왕이 있음
+		else
 		{
-			//역모를 일으킨 죄인을 참수하라
 			Destroy(this);
 			return;
 		}
-		//세상에 단 하나만 있도록 유지하는 패턴 => 싱글턴 패턴 (Singleton Pattern)
-
-		//제가 이걸 "왕"이라고 불렀잖아요?
-		//"왕"이 농사/장사...등등을 할까요?
-		//왕은 신하들에게 일을 진행하라고 관리하는 역할이 될 겁니다!
-		//왕이 농사 마스터가 될 수 있을까?
-		//모든 것을 다 할 수 있는 사람이어야 왕이 되는 것이 아니라
-		//시킬 수 있고, 관리하는 방법을 알아야 된다!
-		//하부 조직을 만들 것이다
-		//게임에서 "관리"되어야 하는 것들이 무엇일까?
-		//반환형식은 IEnumerator입니다. "반복자" => 반복해서 함수가 실행됨 => 프레임 단위로 기다렸다가 실행!
-		//한 번 실행을 하고 Yield 양보했다가 다음 프레임에 또 나와서 실행하고! 반복!
-		//                 (더 기다려야 되는 경우에는 더 기다리기도 가능!)
-		//                    WaitForSeconds(10.0f), 일어났는데 아직 시간이 안됐음. 더 잘 수 있겠군 ㅇㅇ
-		//그럼.. 이걸 IEnumerator로 "저장"했을 때 무엇을 할 수 있을까?
 		initializing = InitializeManagers();
-
-		//저장했기 때문에, 이 친구를 "시작"시키거나 "중단"시킬 수 있어요!
-		//시작을 시키는 것은
 		StartCoroutine(initializing);
 
 	}
 
-	void OnDestroy() //매니저가 없어지면
+	void OnDestroy()
 	{
 		if(initializing != null) StopCoroutine(initializing); //로딩을 진행하는 중이었다면 끊어버릴 수 있도록!
 		DeleteManagers(); //하위 매니저들도 없어지게!
@@ -211,13 +169,20 @@ public class GameManager : MonoBehaviour
 	{
 		if (targetVariable == null)
 		{
-			//컴포넌트는 어떻게 추가해야 할 것인가?
-			//게임 오브젝트를 누르면 => Inspector창에 [Add Component]
-			//버튼을 눌렀다라고 하는 것은 => 기능이 실행된다는 거고 => 함수가 있다는 뜻
 			targetVariable = this.TryAddComponent<ManagerType>();
 		}
 
 		return targetVariable;
+	}
+
+	public static void QuitGame()
+	{
+#if UNITY_EDITOR
+		UnityEditor.EditorApplication.isPlaying = false;
+#else 
+		Application.Quit();
+#endif
+		
 	}
 
 	public static void Pause()
@@ -232,20 +197,20 @@ public class GameManager : MonoBehaviour
 
 	void InvokeInitializeEvent(ref InitializeEvent OriginEvent)
 	{
-		if (OriginEvent != null) //이벤트가 있어야 실행하지
+		if (OriginEvent != null) 
 		{
-			InitializeEvent CurrentEvent = OriginEvent; //저장해놓고
-			OriginEvent = null; //비우고
-			CurrentEvent.Invoke(); //저장해둔거 실행하기
+			InitializeEvent CurrentEvent = OriginEvent; 
+			OriginEvent = null; 
+			CurrentEvent.Invoke(); 
 		}
 	}
 	void InvokeDestroyEvent(ref DestroyEvent OriginEvent)
 	{
-		if (OriginEvent != null) //이벤트가 있어야 실행하지
+		if (OriginEvent != null) 
 		{
-			DestroyEvent CurrentEvent = OriginEvent; //저장해놓고
-			OriginEvent = null; //비우고
-			CurrentEvent.Invoke(); //저장해둔거 실행하기
+			DestroyEvent CurrentEvent = OriginEvent; 
+			OriginEvent = null; 
+			CurrentEvent.Invoke();
 		}
 	}
 	void Update()

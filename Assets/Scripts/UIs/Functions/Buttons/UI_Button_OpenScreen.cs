@@ -1,11 +1,11 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class UI_Button_OpenScreen : MonoBehaviour
+public class UI_Button_OpenUI : MonoBehaviour
 {
     [SerializeField] UIType wantType;
     public void Open()
     {
-        UIManager.ClaimOpenScreen(wantType);
+        UIManager.ClaimOpenUI(wantType);
     }
 }
