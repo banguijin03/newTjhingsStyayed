@@ -1,15 +1,26 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class UI_ScreenChanger : OpenableUIBase
 {
     [SerializeField] Animator anim;
-    public void ChangeStart()
+    Action AnimEndFunction;
+
+    public void ChangeStart(Action newFunction=null)
     {
-        anim.SetTrigger("Out");
+        AnimEndFunction= newFunction;
+        if(anim) anim.SetTrigger("Out");
+        else OnAnimEnd();
     }
-    public void ChangeEnd()
+    public void ChangeEnd(Action newFunction = null)
     {
-        anim.SetTrigger("In");
+        AnimEndFunction= newFunction;
+        if(anim) anim.SetTrigger("In");
+        else OnAnimEnd();
+    }
+    public void OnAnimEnd()
+    {
+        AnimEndFunction?.Invoke();
     }
 }

@@ -402,7 +402,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8581541216080542945, guid: f7067c4eb48649549871dee1b9af7bd0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1861435586116677043, guid: f7067c4eb48649549871dee1b9af7bd0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -504,7 +509,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8581541216080542945, guid: 73992a50a41a4ad49a0adb2ca95288b7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3020382428174161736, guid: 73992a50a41a4ad49a0adb2ca95288b7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -606,7 +616,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8581541216080542945, guid: 27389a6c00494384fa787f6099d58b8e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7463775786064585640, guid: 27389a6c00494384fa787f6099d58b8e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -708,7 +723,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8581541216080542945, guid: 0eaadefa1c431414da9dd80f73953454, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5698823022419657092, guid: 0eaadefa1c431414da9dd80f73953454, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -810,7 +830,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8581541216080542945, guid: 018cdcbbf8241f5449c387a63484aa2e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7510583065697685018, guid: 018cdcbbf8241f5449c387a63484aa2e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -912,7 +937,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8581541216080542945, guid: 2b16b4afe4cd7204e92ca47efe357e50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4109642813596750975, guid: 2b16b4afe4cd7204e92ca47efe357e50, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
