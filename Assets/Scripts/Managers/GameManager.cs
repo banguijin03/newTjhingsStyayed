@@ -72,39 +72,11 @@ public class GameManager : MonoBehaviour
 
 	void OnDestroy()
 	{
-		if(initializing != null) StopCoroutine(initializing); //로딩을 진행하는 중이었다면 끊어버릴 수 있도록!
-		DeleteManagers(); //하위 매니저들도 없어지게!
+		if(initializing != null) StopCoroutine(initializing);
+		DeleteManagers(); 
 	}
-
-	//얘가 문제
-	//로딩은... 얼마나 걸릴까
-	//1프레임만에 끝낼 수 있을까?
-	//1프레임 넘는 시간동안 "이 함수"가 실행되고 있으면 무슨 일이 일어날까?
-	//게임이 멈춥니다. 이 함수 끝날 때까지
-	//이 상태에서 게임을 클릭하면 어떻게 되는가 => 응답없음 => 유저는 꺼버림
-	//"기다림 함수"
-	//coroutine = co - routine
-	//           함께   루틴
-	//         화면출력 유저입력 /   로딩
-	//					 요리   /   청소
-	//운동을 해야 합니다. 상체루틴 하체루틴
-	//                    1시간    1시간
-	//오늘 남은 시간이 1시간
-	//옆에 있는 친구를 데려와서 상체 1시간 시키고
-	//저는 하체 1시간 하면 => 암튼 둘 다 했음
-	//IEnumerator => Start
-	//WaitForSeconds을 통해서 시간을 "기다린" 적이 있었죠!
 	IEnumerator InitializeManagers()
 	{
-		//UI를 만들어서 로딩창이라던지, 다른 유저에게 보여줄 수 있는 공간
-		//데이터 불러오기
-		//유저 세이브 불러오기
-		//설정값을 찾아서 세팅
-		//언어도 세팅
-		//사운드도 세팅
-		//카메라 초기화
-		//유저 입력 받기 시작
-		//몇 개가 필요한지 집계를 받을 때 => 필요한 것! 적어둘 공간이 필요해요!
 		int totalLoadCount = 0;
 		totalLoadCount += CreateManager(ref _ui).LoadCount;
 		totalLoadCount += CreateManager(ref _data).LoadCount;
@@ -117,7 +89,7 @@ public class GameManager : MonoBehaviour
 		totalLoadCount += CreateManager(ref _input).LoadCount;
 
 		yield return UI.Initialize(this);
-		UIBase loadingUI = UIManager.ClaimOpenScreen(UIType.Loading); //UI System이 돌아가기 시작했으니까 기능을 실행해보기!
+		UIBase loadingUI = UIManager.ClaimOpenScreen(UIType.Loading); 
 		IProgress<int> loadingProgress = loadingUI as IProgress<int>;
 
 		loadingProgress?.Set(0, totalLoadCount);
@@ -140,7 +112,10 @@ public class GameManager : MonoBehaviour
 		yield return Input.Connect(this);
 		loadingProgress?.AddCurrent(1);
 		yield return null;
-		UIManager.ClaimOpenScreen(UIType.Title);
+
+
+		//claimopenscreen에서 타이틀 타입이 열릴때 스크린 체인저를 넣는다
+		UIManager.ClaimOpenScreen(UIType.Title, ScreenChangeType.ScreenChanger);
 		isLoading = false;
 	}
 

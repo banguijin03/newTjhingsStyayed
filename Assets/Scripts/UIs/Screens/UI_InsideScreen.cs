@@ -4,13 +4,18 @@ public class UI_InsideScreen : UI_ScreenBase
 {
     private void OnEnable()
     {
-        InputManager.OnCancel -= ToggleMenu;
-        InputManager.OnCancel += ToggleMenu;
-    }
-    private void OnDisable()
-    {
-        InputManager.OnCancel -= ToggleMenu;
+        InputManager.OnCancel -= ToggleOption;
+        InputManager.OnCancel += ToggleOption;
     }
 
-    void ToggleMenu(bool vlaue) => UIManager.ClaimToggleUI(UIType.Menu);
+    private void OnDisable()
+    {
+        InputManager.OnCancel -= ToggleOption;
+    }
+
+    void ToggleOption(bool value)
+    {
+
+        UIManager.ClaimToggleUI(UIType.InsideOption);
+    }
 }

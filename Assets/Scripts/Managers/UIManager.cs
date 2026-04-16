@@ -6,14 +6,15 @@ using UnityEngine.UI;
 
 public enum UIType
 {
-	None, Loading, Title, Option, Movable, Menu, Info, Inside, GameQuit, Base,
+	None, Loading, Title, Option, Movable, InsideOption, Info, Inside, GameQuit, 
+	StatPage, InventoryPage, CharacterPage, MapPage, SavePage, SettingPage,
     _Length
 }
 
 public enum ScreenChangeType
 {
 	None,
-	ScreenChanger,
+	ScreenChanger, SlideChanger,
 	_Length
 }
 public delegate void PopUpEvent(string title, string context, string confirm);
@@ -27,7 +28,12 @@ public class UIManager : ManagerBase
 	new(UIType.Title, "TitleScreen"),
 	new(UIType.Option, "OptionScreen"),
 	new(UIType.Inside, "InsideScreen"),
-	new(UIType.Menu, "MenuWindow"),
+    new(UIType.InsideOption, "InsideOptionWindow"),
+	new(UIType.StatPage, "StatPage"),
+	new(UIType.CharacterPage, "CharacterPage"),
+	new(UIType.MapPage, "MapPage"),
+	new(UIType.SavePage, "SavePage"),
+	new(UIType.SettingPage, "SettingPage")
 };
 
 	Canvas _mainCanvas;
@@ -97,7 +103,6 @@ public class UIManager : ManagerBase
 
 		changerTransform = CreateFullScreen("ScreenChanger");
 		changerTransform.SetAsLastSibling();
-		ObjectManager.CreateObject("ScreenChanger", changerTransform);
 
 		for (ScreenChangeType currentChanger = (ScreenChangeType)1;
 			currentChanger < ScreenChangeType._Length;
@@ -238,27 +243,51 @@ public class UIManager : ManagerBase
 		_currentScreenType = wantType;
 		return OpenUI(wantType);		
 	}
+
+	//ClaimOpenScreen
 	public static UIBase ClaimOpenScreen(UIType wantType) => GameManager.Instance?.UI?.OpenScreen(wantType);
-	protected void ScreenChangeEffectStart(ScreenChangeType wantType)
+	protected void OpenScreen(UIType wantScreen, ScreenChangeType changeType)
 	{
+		ClaimScreenChangeEffect(changeType, ()=>OpenScreen(wantScreen));
+    }
+	public static void ClaimOpenScreen(UIType wantScreen, ScreenChangeType changeType)
+		=> GameManager.Instance?.UI?.OpenScreen(wantScreen, changeType);
+
+
+	//ScreenChangeEffect
+	protected void ScreenChangeEffectStart(ScreenChangeType wantType, System.Action endFunction = null)
+	{
+		if (currentScreenChanger) return;
 		//스크린 체인저를 가져옴
 		if(screenChangerDictionary.TryGetValue(wantType, out UI_ScreenChanger result))
 		{
-			if (!result) return;
+			if (!result)
+			{
+				endFunction?.Invoke();
+				return;
+			}
 			result.gameObject.SetActive(true);
 			//킴
-			result?.ChangeStart(ScreenChangeEffectEnd);
+			result.ChangeStart(endFunction);
 			currentScreenChanger = result;
 		}
+		else
+		{
+			endFunction?.Invoke();
+		}
 	}
-	public static void ClaimScreenChangeEffectStart(ScreenChangeType wantType) => GameManager.Instance?.UI?.ScreenChangeEffectStart(wantType);
-	protected void ScreenChangeEffectEnd()
+	public static void ClaimScreenChangeEffectStart(ScreenChangeType wantType, System.Action endFunction = null) 
+		=> GameManager.Instance?.UI?.ScreenChangeEffectStart(wantType, endFunction);
+    public static void ClaimScreenChangeEffect(ScreenChangeType wantType, System.Action endFunction = null)
+        => GameManager.Instance?.UI?.ScreenChangeEffectStart(wantType, endFunction + ClaimScreenChangeEffectEnd);
+    protected void ScreenChangeEffectEnd()
 	{
 		if (currentScreenChanger == null) return;
 		GameObject targetObject = currentScreenChanger.gameObject;
 		currentScreenChanger.ChangeEnd(()=> targetObject.SetActive(false));
 		currentScreenChanger = null;
     }
+
     public static void ClaimScreenChangeEffectEnd()=>GameManager.Instance?.UI?.ScreenChangeEffectEnd();
 
     public static void ClaimPopUp(string title, string context, string confirm)

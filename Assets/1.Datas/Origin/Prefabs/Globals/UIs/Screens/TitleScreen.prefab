@@ -570,6 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_Button_OpenUI
   wantType: 3
+  ChangeType: 0
 --- !u!1001 &1041082896303729921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -819,6 +820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_Button_OpenUI
   wantType: 7
+  ChangeType: 2
 --- !u!1001 &3933554399888306308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1173,6 +1175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_Button_OpenUI
   wantType: 7
+  ChangeType: 1
 --- !u!224 &5785721621905724759 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4547671111007554477, guid: 480664350ebc5774ea6a874284025fda, type: 3}
