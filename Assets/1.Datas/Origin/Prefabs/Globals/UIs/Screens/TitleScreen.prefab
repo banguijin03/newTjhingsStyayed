@@ -517,14 +517,14 @@ PrefabInstance:
     - target: {fileID: 7142555291592302381, guid: 480664350ebc5774ea6a874284025fda, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2184572172438797985}
+      objectReference: {fileID: 2956122502022696848}
     - target: {fileID: 7142555291592302381, guid: 480664350ebc5774ea6a874284025fda, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Open
       objectReference: {fileID: 0}
     - target: {fileID: 7142555291592302381, guid: 480664350ebc5774ea6a874284025fda, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UI_Button_OpenUI, Assembly-CSharp
+      value: UI_ButtonOpenUI, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7142555291592302381, guid: 480664350ebc5774ea6a874284025fda, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
@@ -545,7 +545,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9219745177116735322, guid: 480664350ebc5774ea6a874284025fda, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2184572172438797985}
+      addedObject: {fileID: 2956122502022696848}
   m_SourcePrefab: {fileID: 100100000, guid: 480664350ebc5774ea6a874284025fda, type: 3}
 --- !u!224 &4373598522234414307 stripped
 RectTransform:
@@ -557,7 +557,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9219745177116735322, guid: 480664350ebc5774ea6a874284025fda, type: 3}
   m_PrefabInstance: {fileID: 265349989698236238}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2184572172438797985
+--- !u!114 &2956122502022696848
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -566,11 +566,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8961506897483274260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37fe6a2e23762044f962caaa27b42722, type: 3}
+  m_Script: {fileID: 11500000, guid: 918c0cc007a62584fbf7e6b1f8f6d910, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UI_Button_OpenUI
+  m_EditorClassIdentifier: Assembly-CSharp::UI_ButtonOpenUI
   wantType: 3
-  ChangeType: 0
+  wantToggle: 0
 --- !u!1001 &1041082896303729921
 PrefabInstance:
   m_ObjectHideFlags: 0

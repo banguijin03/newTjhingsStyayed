@@ -113,9 +113,16 @@ public class GameManager : MonoBehaviour
 		loadingProgress?.AddCurrent(1);
 		yield return null;
 
+		Pause();
 
+		InputManager.OnAnyKey -= Unpause;
+		InputManager.OnAnyKey += Unpause;
 		//claimopenscreen에서 타이틀 타입이 열릴때 스크린 체인저를 넣는다
+
+		yield return new WaitUntil(() => isPlaying);
 		UIManager.ClaimOpenScreen(UIType.Title, ScreenChangeType.ScreenChanger);
+
+		InputManager.OnAnyKey -= Unpause;
 		isLoading = false;
 	}
 

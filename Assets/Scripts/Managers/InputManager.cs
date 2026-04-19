@@ -20,6 +20,7 @@ public class InputManager : ManagerBase
 	public static event ButtonEvent			OnCancel;
 	public static event ButtonEvent			OnShowStatus;
 	public static event VectorEvent			OnMove;
+	public static event Action				OnAnyKey;
 
 	PlayerInput targetInput;
 	Dictionary<string, InputAction> actionDictionary = new();
@@ -94,7 +95,10 @@ public class InputManager : ManagerBase
 		InitializeAction("Cancel",				 (context) => OnCancel			?.Invoke(true));
 		InitializeAction("ShowStatusButtonDown", (context) => OnShowStatus		?.Invoke(true));
 		InitializeAction("ShowStatusButtonUp",	 (context) => OnShowStatus		?.Invoke(false));
-	}
+
+		InitializeAction("AnyKey",				 (context) => OnAnyKey?.Invoke());
+
+    }
 
 	void InitializeAction(string actionName, Action<InputAction.CallbackContext> actionMethod)
 	{

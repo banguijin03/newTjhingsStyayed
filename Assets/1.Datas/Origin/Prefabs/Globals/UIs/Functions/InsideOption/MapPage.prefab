@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.47500002, y: 1}
-  m_AnchoredPosition: {x: -1.1028748, y: -1.9472351}
+  m_AnchoredPosition: {x: -1.1029053, y: -1.9472351}
   m_SizeDelta: {x: -1.8070984, y: 4.5708923}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8780430624626262992
@@ -181,7 +181,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6769650597060168201
 RectTransform:
   m_ObjectHideFlags: 0
@@ -198,10 +198,10 @@ RectTransform:
   - {fileID: 550976809270202504}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.02916871, y: 0.067744896}
-  m_AnchorMax: {x: 0.9696626, y: 0.94600004}
-  m_AnchoredPosition: {x: -0.00012207031, y: -0.39286804}
-  m_SizeDelta: {x: 0.00018311, y: -0.78552}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3229860969062396818
 CanvasRenderer:
@@ -223,3 +223,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a9124c059596f4eb635f382c6a12b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mappage
+  requiredUI: []
