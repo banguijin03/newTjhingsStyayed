@@ -33,7 +33,7 @@ public class UIManager : ManagerBase
 	new(UIType.CharacterPage, "CharacterPage"),
 	new(UIType.MapPage, "MapPage"),
 	new(UIType.SavePage, "SavePage"),
-	new(UIType.SettingPage, "SettingPage")
+	new(UIType.SettingPage, "SettingPage"),
 };
 
 	Canvas _mainCanvas;
