@@ -2,13 +2,9 @@ using UnityEngine;
 
 public class MovableCharacter : CharacterBase, IRunnable, IFunctionable
 {
-    protected Vector3 targetDestination; 
+    protected Vector3? targetDestination = null;
+    protected Vector3? targetDestinaion = null;
     protected float targetTolerance;
-
-    void Start()
-    {
-        RegistrationFunctions();
-    }
 
     public void RegistrationFunctions()
     {
@@ -21,28 +17,46 @@ public class MovableCharacter : CharacterBase, IRunnable, IFunctionable
     }
     public void PhysicsUpdate(float deltaTime)
     {
-        Vector3 currentMoveDirection = (targetDestination - transform.position) ;
-        float distance = currentMoveDirection.magnitude;
+        UpdateToDirection(deltaTime);
+        UpdateToDestination(deltaTime);
+    }
+    public void UpdateToDirection(float deltaTime)
+    {
+        if (targetDestinaion is not null) return;
+        float currentMoveSpeed = deltaTime * 5.0f;
+        transform.position += currentMoveSpeed * targetDestinaion.Value;
+       
+    }
+
+    public void UpdateToDestination(float deltaTime)
+    {
+         if(targetDestinaion is not  null) return;
+        Vector3 currentDectination = (targetDestination.Value - transform.position);
+        float distance = currentDectination.magnitude;
         if (distance > targetTolerance)
         {
-            currentMoveDirection.Normalize();
-            //거리=시간*속력              방향         *   거리
-            transform.position +=  deltaTime * 5.0f * currentMoveDirection;
+            currentDectination.Normalize();
+            float currentMoveSpeed = deltaTime * 5.0f;
+            float resultMoveSpeed = Mathf.Min(currentMoveSpeed, distance);
+            transform.position += resultMoveSpeed * currentDectination;
         }
     }
 
     public void MoveToDestination(Vector3 destination, float tolerance)
     {
+        targetDestinaion = null;
         targetDestination = destination;
         targetTolerance = tolerance;
     }
 
     public void MoveToDirection(Vector3 direction)
     {
-
+        targetDestination = null;
+        targetDestinaion = direction.normalized;
     }
     public void StopMovement()
     {
-
+        targetDestination = null;
+        targetDestinaion = null;
     }
 }

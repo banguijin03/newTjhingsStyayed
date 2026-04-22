@@ -5,10 +5,6 @@ using UnityEngine;
 
 public class ObjectManager : ManagerBase
 {
-	//이제 새로운 Global 파일을 추가할 때 글자 하나만 추가하면 됨!
-	//바꿀 필요가 없다 => 변수가 아니라, 상수인 셈! => 나중에 바뀌면 안됨!
-	//일반적인 상수는 constant variable이 맞습니다!
-	//"읽기 전용"으로 바꿔야 합니다!
 	readonly string[] globalPoolSettings =
 	{
 		"GlobalCharacterPool",
@@ -17,32 +13,13 @@ public class ObjectManager : ManagerBase
 		"GlobalObjectPool",
 		"GlobalUIPool",
 	};
-
-	//직렬화가능한 => 유니티에서 보기 위해서 쓴 것!
-	//public이라고 하는 건 사실 필요 없고 직렬화만 되면 유니티에서 볼 수 있다!
-	//직렬화 변수
-	//[SerializeField] PoolSetting[] testSettings;
-
-	//PoolRequest가 있고, 그것을 위한 풀링을 준비하기
-	//PoolRequest를 가져와서 저장하려면 어떤 자료구조가 필요할까?
-	//리스트 : 배열과 비슷한데 추가 제거가 쉬움	, 용량△, 찾는 속도가 느리다
-	//추가 제거가 많고, 전체를 도는 일이 적은
-
-	//배열 : 리스트와 비슷한데 추가 제거가 어려움, 용량▽, 찾는 속도가 빠르다
-	//추가 제거가 적고, 전체를 도는 일이 많은
-
-	//PoolRequest는.. 얼마나 자주 추가될까? => 로딩할 때 즈음?
-	//로딩되는 횟수보다 대상이 개수가 부족하면 새로 추가하거나 하는 일!
 	List<PoolRequest> loadedPoolRequests = new();
 
-	//해당하는 이름의 대상으로 불러주기 위해서
-	//[이름 - 게임오브젝트] 자료구조
 	static Dictionary<string, ObjectPoolModule> poolDictionary = new();
 
-	//PollRequst에서 그 안에서 string으로 찾아서 그 이름에 맞는 GameObject를 찾으면 되니까!
-	//만약 같은 이름으로 똑같은 오브젝트를 만들려고 했는데..
 	protected override IEnumerator OnConnected(GameManager newManager)
 	{
+		RegistrationInHierarchy();
 		RegistrationPool(globalPoolSettings);
 		InitializePool();
 
@@ -56,37 +33,30 @@ public class ObjectManager : ManagerBase
 
 	public static GameObject CreateObject(string wantName, Transform parent = null)
 	{
-		GameObject result = null;//시작할 때에는 암것도 없음!
+		GameObject result = null;
 
-		//이름 대소문자 신경쓰지 않고 싶다!
 		wantName = wantName.ToLower();
 
-		//이 이름으로 풀링이 등록 되어 있대요!
 		if(poolDictionary.TryGetValue(wantName, out ObjectPoolModule pool))
 		{
-			result = pool.CreateObject(parent); //갖고 와야겠다 ㅎㅎ
+			result = pool.CreateObject(parent);
 		}
 		else if(DataManager.TryLoadDataFile(wantName, out GameObject prefab) && prefab)
 		{
-			//풀에 등록되지 않은 야생의 오브젝트를 만드는 방법!
-			//데이터에는 있는지 확인해보기!
 			result = Instantiate(prefab, parent);
 		}
 
 		if (!result) UIManager.ClaimErrorMessage(SystemMessage.ObjectNameNotFound(wantName));
 
-		//등록해주는 것 까지!
-		RegistrationObject(result); //둘 중에 하나라도 했겠지? 아님 말고!
+		RegistrationObject(result); 
 
 		return result;
 	}
 	public static GameObject CreateObject(GameObject prefab, Transform parent = null)
 	{
 		if (prefab == null) return null;
-
-		//                                      누가 주인인가
-		GameObject result = Instantiate(prefab, parent); //만들고
-		RegistrationObject(result); //등록함
+		GameObject result = Instantiate(prefab, parent); 
+		RegistrationObject(result);
 		return result;
 	}
 
@@ -155,10 +125,10 @@ public class ObjectManager : ManagerBase
 			switch(space)
 			{
 				case Space.World:
-					result.transform.position = position; //절대값을 기준으로
+					result.transform.position = position; 
 					break;
 				case Space.Self:
-					result.transform.localPosition = position; //부모를 기준으로
+					result.transform.localPosition = position;
 					break;
 			}
 		}
@@ -172,10 +142,10 @@ public class ObjectManager : ManagerBase
 			switch(space)
 			{
 				case Space.World:
-					result.transform.position = position; //절대값을 기준으로
+					result.transform.position = position; 
 					break;
 				case Space.Self:
-					result.transform.localPosition = position; //부모를 기준으로
+					result.transform.localPosition = position;
 					break;
 			}
 		}
@@ -317,13 +287,13 @@ public class ObjectManager : ManagerBase
 	{
 		if (!target) return;
 		UnregistrationObject(target);
-		if (target.TryGetComponent(out PooledObject pool)) //풀링이 되어 있다고?
+		if (target.TryGetComponent(out PooledObject pool)) 
 		{
-			pool.OnEnqueue(); // 너 집에 들어가
+			pool.OnEnqueue(); 
 		}
-		else //풀링이 안되어 있다고
+		else 
 		{
-			Destroy(target); //주거
+			Destroy(target); 
 		}
 	}
 
@@ -336,13 +306,21 @@ public class ObjectManager : ManagerBase
 			current.UnregistrationFunctions();
 		}
 	}
+	public void RegistrationInHierarchy()
+	{
+		foreach(MonoBehaviour current in FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude, FindObjectsSortMode.None))
+		{
+			if(current is IFunctionable currentFunctionable)
+			{
+				currentFunctionable.RegistrationFunctions();
+			}
+		}
+	}
 
 	public void RegistrationPool(string poolName)
 	{
-		//무조건 소문자로 받기!
 		poolName = poolName.ToLower();
 
-		//명령!
 		PoolRequest currentRequest = DataManager.LoadDataFile<PoolRequest>(poolName);
 		if (currentRequest == null) return;
 		if (currentRequest.settings == null) return;
@@ -367,16 +345,10 @@ public class ObjectManager : ManagerBase
 		}
 	}
 
-	//"가변 인자" => 인자의 개수가 무한정 늘어날 수 있는 함수
-	//"변인" => 영어로 뭐죠? Parameter : "변인들"이 된다면? Parameters
-	//Parameters => params
 	public void RegistrationPool(params string[] poolNames)
 	{
 		foreach (string poolName in poolNames)
 		{
-			//가변인자는 "우선순위"가 낮습니다!
-			//가변인자다 보니까 개수가 "고정인자"를 가진 함수랑 똑같아질 수 있잖아요?
-			//"고정된 인자"를 가지고 있는 함수를 먼저 인식해서 실행한다!
 			RegistrationPool(poolName);
 		}
 	}

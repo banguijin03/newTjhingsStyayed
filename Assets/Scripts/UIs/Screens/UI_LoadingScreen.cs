@@ -24,7 +24,7 @@ public class UI_LoadingScreen : UI_ScreenBase
         return newText;
     }
 
-    public void SetComplete()
+    public void SetComplete(UIType openScreen, ScreenChangeType changeType)
     {
         layoutOnComplete.SetActive(true);
         layoutOnLoading.SetActive(false);
