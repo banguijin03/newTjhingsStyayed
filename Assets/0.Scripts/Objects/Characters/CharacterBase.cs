@@ -3,7 +3,6 @@ using UnityEngine;
 
 public delegate void MovementEvent(Vector3 move);
 public delegate void LookAtEvent(Vector3 direction);
-//                             실제 데미지를 "제공"한 사물      데미지를 주라고 시킨 놈
 public delegate void DamageEvent(GameObject damageCauser, ControllerBase instigator, float damage);
 
 public class CharacterBase : MonoBehaviour
@@ -18,8 +17,6 @@ public class CharacterBase : MonoBehaviour
     public void DamageNotify(GameObject damageCauser, ControllerBase instigator, float damage)
         => OnDamage?.Invoke(damageCauser, instigator, damage);
 
-    //가장 중요한 기능!
-    //말을 했을 때 말을 잘 들어먹는 것
     ControllerBase _controller;
     public ControllerBase Controller => _controller;
 
@@ -28,20 +25,13 @@ public class CharacterBase : MonoBehaviour
 
     public virtual string DisplayName => "character";
 
-    //모듈을 저장해놓기!
-    //List : 추가/제거가 쉽다 <-> 메모리 효율이 낮고, 전체 순환이 느리다
-    //           많고                                    적고
-    //Array: 추가/제거가 어렵고 <-> 메모리 효율이 높고, 전체 순환이 빠르다
-    //           적고                                    많다
     Dictionary<System.Type, CharacterModule> moduleDictionary = new();
 
-    // 추가 / 제거 / 검색
     public void AddModule(System.Type wantType, CharacterModule wantModule)
     {
         if (moduleDictionary.TryAdd(wantType, wantModule))
-        {//추가하는 데에 성공했으니까
+        {
             wantModule.OnRegistration(this);
-            //등록하는 것도 발동!
         }
     }
     public void AddAllModuleFromObject(GameObject target)
@@ -50,7 +40,6 @@ public class CharacterBase : MonoBehaviour
 
         foreach (CharacterModule currentModule in target.GetComponentsInChildren<CharacterModule>())
         {
-            //           이 친구의 대분류 타입,          이 친구
             AddModule(currentModule.RegistrationType, currentModule);
         }
     }
@@ -66,10 +55,8 @@ public class CharacterBase : MonoBehaviour
     {
         foreach (CharacterModule currentModule in moduleDictionary.Values)
         {
-            //             해제를 했다고 말해놓고
             currentModule.OnUnregistration(this);
         }
-        //끝나고 나서 없애기!
         moduleDictionary.Clear();
     }
     public T GetModule<T>() where T : CharacterModule

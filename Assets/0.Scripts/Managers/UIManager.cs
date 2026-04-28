@@ -28,7 +28,7 @@ public class UIManager : ManagerBase
 	new(UIType.Title, "TitleScreen"),
 	new(UIType.Option, "OptionScreen"),
 	new(UIType.Inside, "InsideScreen"),
-    new(UIType.InsideOption, "InsideOptionWindow"),
+    new(UIType.InsideOption, "InsideScreen"),
 	new(UIType.StatPage, "StatPage"),
 	new(UIType.CharacterPage, "CharacterPage"),
 	new(UIType.MapPage, "MapPage"),
@@ -96,12 +96,12 @@ public class UIManager : ManagerBase
 		switcherTransform = CreateFullScreen("ScreenSwitcher");
 
         foreach (var currentPair in globalScreenArray)
-		{
-			UIBase created = CreateUI(currentPair.Key, currentPair.Value, switcherTransform);
-			if (created is IOpenable asOpenable) asOpenable.Close();
-		}
+        {
+            UIBase created = CreateUI(currentPair.Key, currentPair.Value, switcherTransform);
+            if (created is IOpenable asOpenable) asOpenable.Close();
+        }
 
-		changerTransform = CreateFullScreen("ScreenChanger");
+        changerTransform = CreateFullScreen("ScreenChanger");
 		changerTransform.SetAsLastSibling();
 
 		for (ScreenChangeType currentChanger = (ScreenChangeType)1;

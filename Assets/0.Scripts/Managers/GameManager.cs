@@ -62,6 +62,7 @@ public class GameManager : MonoBehaviour
 
     bool isLoading = true;
     bool isPlaying = true;
+
     void Awake()
     {
         if (Instance == null) 
@@ -79,12 +80,11 @@ public class GameManager : MonoBehaviour
 
     }
 
-    void OnDestroy()
+    void OnDestroy() 
     {
-        if (initializing != null) StopCoroutine(initializing); 
+        if (initializing != null) StopCoroutine(initializing);
         DeleteManagers(); 
     }
-
     IEnumerator InitializeManagers()
     {
         int totalLoadCount = 0;
@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
         totalLoadCount += CreateManager(ref _input).LoadCount;
 
         yield return UI.Initialize(this);
-        UIBase loadingUI = UIManager.ClaimOpenScreen(UIType.Loading);
+        UIBase loadingUI = UIManager.ClaimOpenScreen(UIType.Loading); //UI System이 돌아가기 시작했으니까 기능을 실행해보기!
         IProgress<int> loadingProgress = loadingUI as IProgress<int>;
 
         loadingProgress?.Set(0, totalLoadCount);
@@ -149,7 +149,6 @@ public class GameManager : MonoBehaviour
         //데이터파일 DataManager
         Data?.Disconnect();
     }
-
     ManagerType CreateManager<ManagerType>(ref ManagerType targetVariable) where ManagerType : ManagerBase
     {
         if (targetVariable == null)
@@ -181,18 +180,18 @@ public class GameManager : MonoBehaviour
 
     void InvokeInitializeEvent(ref InitializeEvent OriginEvent)
     {
-        if (OriginEvent != null) 
+        if (OriginEvent != null) //이벤트가 있어야 실행하지
         {
-            InitializeEvent CurrentEvent = OriginEvent; 
-            OriginEvent = null; 
-            CurrentEvent.Invoke(); 
+            InitializeEvent CurrentEvent = OriginEvent; //저장해놓고
+            OriginEvent = null; //비우고
+            CurrentEvent.Invoke(); //저장해둔거 실행하기
         }
     }
     void InvokeDestroyEvent(ref DestroyEvent OriginEvent)
     {
         if (OriginEvent != null) 
         {
-            DestroyEvent CurrentEvent = OriginEvent;
+            DestroyEvent CurrentEvent = OriginEvent; 
             OriginEvent = null; 
             CurrentEvent.Invoke(); 
         }
@@ -237,9 +236,10 @@ public class GameManager : MonoBehaviour
 
     void FixedUpdate()
     {
+        //물리작용도 하지 말아야 하는 타이밍이 있답니다^^
         if (isLoading || !isPlaying) return;
 
-        float deltaTime = Time.fixedDeltaTime; 
+        float deltaTime = Time.fixedDeltaTime; //기본값은 0.02
 
         OnPhysicsCharacter?.Invoke(deltaTime);
         OnPhysicsObject?.Invoke(deltaTime);
