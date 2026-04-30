@@ -28,7 +28,7 @@ public class UIManager : ManagerBase
 	new(UIType.Title, "TitleScreen"),
 	new(UIType.Option, "OptionScreen"),
 	new(UIType.Inside, "InsideScreen"),
-    new(UIType.InsideOption, "InsideScreen"),
+    new(UIType.InsideOption, "InsideOptionWindow"),
 	new(UIType.StatPage, "StatPage"),
 	new(UIType.CharacterPage, "CharacterPage"),
 	new(UIType.MapPage, "MapPage"),

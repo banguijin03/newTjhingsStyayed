@@ -79,7 +79,8 @@ public class InputManager : ManagerBase
 		foreach (InputAction currentAction in targetInput.actions)
 		{ 
 			actionDictionary.TryAdd(currentAction.name, currentAction);
-		}
+            currentAction.Enable();
+        }
 	}
 
 	void InitializeAllActions()

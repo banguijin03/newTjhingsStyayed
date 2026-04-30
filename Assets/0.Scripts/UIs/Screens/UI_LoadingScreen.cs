@@ -18,6 +18,9 @@ public class UI_LoadingScreen : UI_ScreenBase
     public GameObject layoutOnComplete;
     public GameObject layoutOnLoading;
 
+    UIType targetScreen;
+    ScreenChangeType screenChangeType;
+
     public string SetCurrentStatus(string newText)
     {
         explainText.SetText(newText);
@@ -26,6 +29,11 @@ public class UI_LoadingScreen : UI_ScreenBase
 
     public void SetComplete(UIType openScreen, ScreenChangeType changeType)
     {
+        GameManager.Pause();
+        InputManager.OnAnyKey -= ExitLoading;
+        InputManager.OnAnyKey += ExitLoading;
+        targetScreen = openScreen;
+        screenChangeType = changeType;
         layoutOnComplete.SetActive(true);
         layoutOnLoading.SetActive(false);
     }
@@ -40,9 +48,17 @@ public class UI_LoadingScreen : UI_ScreenBase
 
     public int Set(int newCurrent, int newMax)
     {
-        layoutOnComplete.SetActive(true);
-        layoutOnLoading.SetActive(false);
+        layoutOnComplete.SetActive(false);
+        layoutOnLoading.SetActive(true);
         Max = newMax;
         return Set(newCurrent);
     }
+
+    public void ExitLoading()
+    {
+        InputManager.OnAnyKey -= ExitLoading;
+        UIManager.ClaimOpenScreen(targetScreen, screenChangeType);
+        GameManager.Unpause();
+    }
+
 }

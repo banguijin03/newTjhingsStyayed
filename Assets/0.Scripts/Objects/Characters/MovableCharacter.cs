@@ -30,7 +30,7 @@ public class MovableCharacter : CharacterBase, IRunnable, IFunctionable
     
     public void AnimationUpdate(Vector3 moveDelta)
     {
-        if (anim!) return;
+        if (!anim) return;
         anim.SetFloat("MoveX", LookRotation.x);
         anim.SetFloat("MoveY", LookRotation.y);
         anim.SetFloat("MoveSpeed", Time.fixedDeltaTime);

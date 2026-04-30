@@ -47,8 +47,8 @@ public class CharacterBase : MonoBehaviour
     {
         if (moduleDictionary.ContainsKey(wantType))
         {
-            moduleDictionary[wantType]?.OnUnregistration(this); 
-            moduleDictionary.Remove(wantType); 
+            moduleDictionary[wantType]?.OnUnregistration(this);
+            moduleDictionary.Remove(wantType);
         }
     }
     public void RemoveAllModule()
@@ -69,7 +69,7 @@ public class CharacterBase : MonoBehaviour
     {
         if (Controller) Unpossessed();
         _controller = from;
-        AddAllModuleFromObject(gameObject); 
+        AddAllModuleFromObject(gameObject);
         OnPossessed(Controller);
         return Controller;
     }
@@ -77,7 +77,7 @@ public class CharacterBase : MonoBehaviour
     public void Unpossessed()
     {
         if (Controller) OnUnpossessed(Controller);
-        RemoveAllModule(); 
+        RemoveAllModule();
         _controller = null;
     }
     public bool Unpossessed(ControllerBase oldController)

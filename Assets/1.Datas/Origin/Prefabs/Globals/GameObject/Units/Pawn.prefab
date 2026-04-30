@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8772904988942608149}
   - component: {fileID: 7511115100792880455}
   - component: {fileID: 5853413371801491344}
+  - component: {fileID: 266294849983373915}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8004350128614728210}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 213.75899, y: 60.669, z: 283.5}
   m_LocalScale: {x: 56.699997, y: 56.699997, z: 19.935719}
   m_ConstrainProportionsScale: 0
@@ -110,6 +111,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52ffb7f972bdb7c46a6d09520cb7af52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterBase
+--- !u!114 &266294849983373915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8004350128614728210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 542165f1498421f4fa992a82430f0325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovementModule
 --- !u!1 &8978769871381490345
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,8 +134,9 @@ GameObject:
   - component: {fileID: 5847125804391454806}
   - component: {fileID: 2596696756100828923}
   - component: {fileID: 6980103040782577054}
+  - component: {fileID: 6315785764040813369}
   m_Layer: 0
-  m_Name: 16x16 Idle-Sheet_0
+  m_Name: 2DSkinnedModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -190,7 +204,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7066941981183115402, guid: 033b90e9a9ea1e04e99289e3a546382c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -224,3 +238,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6315785764040813369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8978769871381490345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef6df6720089c774baca4b3844e70cb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationModule
+  anim: {fileID: 6980103040782577054}
+  isRotationByMovement: 1
