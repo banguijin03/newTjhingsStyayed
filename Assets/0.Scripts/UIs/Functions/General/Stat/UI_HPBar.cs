@@ -1,13 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UI_HPBar : MonoBehaviour
+public class UI_HPBar : UIBase
 {
-    public HitPointModule percent;
+    public Stat percent;
     public Slider slider;
 
     void Update()
     {
-        slider.value = percent.PercentHP();
+        slider.value = percent.Percent;
     }
 }

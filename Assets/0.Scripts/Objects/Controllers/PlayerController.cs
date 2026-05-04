@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerController : ControllerBase
@@ -10,6 +11,7 @@ public class PlayerController : ControllerBase
         InputManager.OnMove -= MoveToDirection;
         InputManager.OnMove += MoveToDirection;
     }
+
     protected override void OnUnpossess(CharacterBase oldCharacter)
     {
         base.OnUnpossess(oldCharacter);

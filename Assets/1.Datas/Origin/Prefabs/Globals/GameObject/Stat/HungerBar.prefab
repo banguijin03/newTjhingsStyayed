@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 4145734934494497976}
   - component: {fileID: 2152332228824529266}
   - component: {fileID: 5055937267698896864}
+  - component: {fileID: -8695562732769722913}
   m_Layer: 5
   m_Name: HungerBar
   m_TagString: Untagged
@@ -249,6 +250,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f785ff3b6a18eaf448fa9f097ba6aed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIHungerBar
+  percent: {fileID: 0}
+  slider: {fileID: 2152332228824529266}
+--- !u!114 &-8695562732769722913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6849605931783578408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2b49fe835893f4d89261a22e9164ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatModule
+  HP: {fileID: 0}
+  Hunger: {fileID: 0}
+  Thirst: {fileID: 0}
+  Mood: {fileID: 0}
 --- !u!1 &9058477740507369623
 GameObject:
   m_ObjectHideFlags: 0

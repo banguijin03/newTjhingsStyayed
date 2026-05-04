@@ -1,13 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIHungerBar : MonoBehaviour
+public class UIHungerBar : UIBase
 {
-    public HungerModule percent;
+    public Stat percent;
     public Slider slider;
 
     void Update()
     {
-        slider.value = percent.PercentHunger();
+        slider.value = percent.Percent;
     }
 }

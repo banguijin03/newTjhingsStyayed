@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 7998888785995197109}
   - component: {fileID: 3152167749224323368}
   - component: {fileID: 1295932695865515994}
+  - component: {fileID: 3744762071396244795}
   m_Layer: 5
   m_Name: ThirstBar
   m_TagString: Untagged
@@ -249,6 +250,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 295397fcea0089847b7e5b6c41e5fa07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_ThirstBar
+  percent: {fileID: 0}
+  slider: {fileID: 3152167749224323368}
+--- !u!114 &3744762071396244795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5601677269206552421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2b49fe835893f4d89261a22e9164ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatModule
+  HP: {fileID: 0}
+  Hunger: {fileID: 0}
+  Thirst: {fileID: 0}
+  Mood: {fileID: 0}
 --- !u!1 &6637412714233713178
 GameObject:
   m_ObjectHideFlags: 0

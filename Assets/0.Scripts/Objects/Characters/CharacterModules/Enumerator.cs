@@ -20,7 +20,7 @@ public enum MoveCheckType
 public enum Conditions
 {
     //배고픔, 갈증, 환각, 
-    Hunger, Thirst, Hallucination, 
+    Hunger, Thirst, Hallucination, isRunning,
     Length
 }
 

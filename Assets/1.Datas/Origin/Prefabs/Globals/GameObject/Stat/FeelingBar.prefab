@@ -289,6 +289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aad19176c634344f9d6871480406558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_FeelingBar
+  percent: {fileID: 0}
+  slider: {fileID: 2868429488639401951}
 --- !u!1 &6165360418755232748
 GameObject:
   m_ObjectHideFlags: 0
