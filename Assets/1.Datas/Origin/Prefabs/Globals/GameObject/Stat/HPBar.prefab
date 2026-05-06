@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6122030589614244721}
   - component: {fileID: 1069052934960687773}
-  - component: {fileID: 503749191785446981}
-  - component: {fileID: -2572781466486228149}
   m_Layer: 5
   m_Name: HPBar
   m_TagString: Untagged
@@ -92,36 +90,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &503749191785446981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123066558998844254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60702907acf63824e84c9f5f867df56e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UI_HPBar
-  percent: {fileID: 0}
-  slider: {fileID: 1069052934960687773}
---- !u!114 &-2572781466486228149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123066558998844254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf2b49fe835893f4d89261a22e9164ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StatModule
-  HP: {fileID: 0}
-  Hunger: {fileID: 0}
-  Thirst: {fileID: 0}
-  Mood: {fileID: 0}
 --- !u!1 &2188307319494120300
 GameObject:
   m_ObjectHideFlags: 0

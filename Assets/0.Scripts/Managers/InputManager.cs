@@ -28,10 +28,9 @@ public class InputManager : ManagerBase
 	Dictionary<string, InputAction> actionDictionary = new();
 	List<RaycastResult> cursorHitList = new();
 
+	GameObject cursorHoverObject;
 	Vector2 cursorScreenPosition;
 	Vector3 cursorWorldPosition;
-
-	public bool is2D = true;
 
 	protected override IEnumerator OnConnected(GameManager newManager)
 	{
@@ -52,21 +51,62 @@ public class InputManager : ManagerBase
 
 	public void UpdateEvent(float deltaTime)
 	{
-		RefreshGameObjectUnderCursor();
+		RefreshGameObjectUnderCursor(cursorScreenPosition);
 	}
 
-	void RefreshGameObjectUnderCursor()
+	void RefreshGameObjectUnderCursor(Vector2 screenPosition)
 	{
 		cursorHitList.Clear();
-		if (is2D)
+		GameManager.Instance.Camera.GetRaycastResult(screenPosition, cursorHitList);
+
+		Vector3 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
+        GameObject firstObject = null;
+
+		if(cursorHitList.Count > 0 && cursorHitList[0].element != null)
 		{
-			GameManager.Instance.Camera.GetRaycastResult2D(cursorScreenPosition, cursorHitList);
+			firstObject = cursorHitList[0].gameObject;
+		}
+
+		if (GameManager.is2D)
+		{
+			worldPosition.z = 0;
+			float GetValue(RaycastResult target)
+			{
+				return target.sortingOrder + target.sortingLayer * 100000;
+			}
+            RaycastResult nearest =  cursorHitList.GetMaximum<RaycastResult>(GetValue);
+			firstObject = nearest.gameObject;
+			worldPosition = nearest.worldPosition;
 		}
 		else
 		{
-			GameManager.Instance.Camera.GetRaycastResult3D(cursorScreenPosition, cursorHitList);
-		}
-	}
+            float GetDistance(RaycastResult target)
+			{
+				return target.distance; 
+			}
+            RaycastResult nearest = cursorHitList.GetMinimum<RaycastResult>(GetDistance);
+            firstObject = nearest.gameObject;
+            worldPosition = nearest.worldPosition;
+        }
+        float firstDistance = float.MaxValue;
+        
+		Vector3 firstPosition = worldPosition;
+
+        foreach (RaycastResult currentResult in cursorHitList)
+        {
+            float currentDistance = currentResult.distance;
+
+            if (currentDistance < firstDistance)
+            {
+                firstObject = currentResult.gameObject;
+                firstDistance = currentDistance;
+                firstPosition = currentResult.worldPosition;
+            }
+        }
+        cursorScreenPosition = screenPosition;
+        cursorWorldPosition = worldPosition;
+
+    }
 
 	public GameObject GetGameObjectUnderCursor()
 	{
@@ -126,23 +166,6 @@ public class InputManager : ManagerBase
 
 	void CursorPositionChanged(Vector2 screenPosition)
 	{
-		Vector3 worldPosition;
-
-		if(is2D)
-		{
-			worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
-			worldPosition.z = 0;
-		}
-		else
-		{
-			worldPosition = Vector3.zero;
-		}
-
-		cursorScreenPosition = screenPosition;
-		cursorWorldPosition = worldPosition;
-
-
-
-		OnMouseMove?.Invoke(screenPosition, worldPosition);
+		OnMouseMove?.Invoke(cursorScreenPosition, cursorWorldPosition);
 	}
 }

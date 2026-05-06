@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.EventSystems;
 public static class Extensions
 {
 	public static float normalized(this float target)
@@ -26,14 +27,34 @@ public static class Extensions
 		else				return target.gameObject.TryAddComponent<T>(); 
 	}
 
-	public static IEnumerator WaitForTask(this Task targetTask)
+	public static T GetExtreme<T>(this IEnumerable targetList, float defaultScore, 
+		System.Func<T, float>Evaluator,
+		System.Func<float, float, bool> Comparison)
+	{ 
+        T result = default;
+        float firstScore = defaultScore;
+
+        foreach (T currentTarget in targetList)
+        {
+            float currentScore = Evaluator(currentTarget);
+
+            if (Comparison(currentScore, firstScore))
+            {
+                result = currentTarget;
+                firstScore = currentScore;
+            }
+        }
+        return result;
+    }
+
+	public static T GetMaximum<T>(this IEnumerable targetList, System.Func<T, float> Evaluator)
+	=> GetExtreme(targetList, float.MinValue, Evaluator, (a, b) => a > b);
+	public static T GetMinimum<T>(this IEnumerable targetList, System.Func<T, float> Evaluator)
+    => GetExtreme(targetList, float.MaxValue, Evaluator, (a, b) => a < b);
+
+    public static IEnumerator WaitForTask(this Task targetTask)
 	{
-		//WaitWhile : true인 동안 작동함!
-		//WaitUntil : false인 동안 작동함! => true가 될 때까지 기다림!
-		//             기다린다 전까지         타겟작업이 끝나기
-		//              Wait Until Target Task Is Completed
 		yield return new WaitUntil(() => targetTask.IsCompleted);
-		//작업을 제거하다
 		targetTask.Dispose();
 	}
 
@@ -41,22 +62,12 @@ public static class Extensions
 	{
 		float absAHalf = Mathf.Abs(aHalf);
 		float absBHalf = Mathf.Abs(bHalf);
-		//그래서 겹쳤다면, 만약에 원래 안 겹쳤을 때에 있을 수 있는 공간
 		float minSpace = absAHalf + absBHalf;
-		//지금 이 둘 사이의 거리가 얼마나 가까운지!
 		float distance = aPos - bPos;
-		//x최소 거리와 둘 사이의 거리 차이! => 예외처리!
 		float penetration = minSpace - Mathf.Abs(distance);
-		//어느 방향으로 묻혀있는지 확인하는 것도 중요!
-		//A가 왼쪽 => +로 보여줄까 -로 보여줄까!
-		//distance의 부호를 그대로 따라가게 하려면!
-		//              마이너스면 -1 / 0이상이면 1
 		penetration *= Mathf.Sign(distance);
 		return penetration;
 	}
-
-	//A와 B가 있는데, 얼마나 깊게 묻혀 있는지 확인하기!
-	//기준은 A로 잡을 거예요!
 	public static Vector2 AABB(this Rect A, Rect B)
 	{
 		Vector2 result = Vector2.zero;
@@ -67,7 +78,6 @@ public static class Extensions
 		Vector2 bMax  = B.max;
 		Vector2 bHalf = B.size * .5f;
 
-		//한 쪽의 최대 위치가 다른 쪽의 최소 위치보다 높아야 함!
 		if(aMax.x > bMin.x && bMax.x > aMin.x)
 		{
 			result.x = GetPenetratedDistance(aHalf.x, bHalf.x, A.position.x, B.position.x);
@@ -78,27 +88,12 @@ public static class Extensions
 		}
 		return result;
 	}
-
-	//Clamp를 만드는 것과 비슷하다!
-	//숫자 하나를 범위 내에 유지하도록 만들어 주는 것!
-	//대신 숫자 하나가 아니라 범위를 범위 내에 있도록 해주는 것!
-	//내부적으로 확률을 맞출 때라던지!
-	//확률을 2배로 만드는 것!
-	//원하는 확률을 2배로 만든다
-	//원하는 확률이 있었던 공간 / 원하는 확률이 없었던 공간
-	//희귀 물품이 줄어들고 있다 -> 희귀는 확률이 늘어나지 않는데 일반만 늘어나는 경우!
-	//1차 가챠 => 2차 가챠
-	//  등급        물건
 	public static float GetOutboundDistance(float inMin, float outMin, float inMax, float outMax)
 	{
 		float result = 0.0f;
 
-		//전체 맵보다 카메라가 커요! 와이드스크린인가봐요!
 		bool leftOut = inMin < outMin;
 		bool rightOut = inMax > outMax;
-		//양쪽 다 나가면 아무고토 안함
-		//양쪽 다 안나가면 아무고토 안함
-		//둘중에 하나만 나갔다면 => Xor
 		if (leftOut ^ rightOut)
 		{
 			if(leftOut) result = outMin - inMin;
@@ -107,11 +102,6 @@ public static class Extensions
 		return result;
 	}
 
-	//삐져 나온 양을 체크하는 방법!
-	//오른쪽으로 2만큼 빠져나왔다면 (-2, 0)
-	//왼쪽으로 3만큼 빠져나왔다면 (3, 0)
-	//아래로 1만큼 빠져나왔다면 (0,1)
-	//위로 1만큼 빠져나왔다면 (0,-1)
 	public static Vector2 InversedAABB(this Rect target, Rect bound)
 	{
 		Vector2 result;
