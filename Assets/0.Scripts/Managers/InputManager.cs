@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 
 public delegate void MouseMoveEvent(Vector2 screenPosition, Vector3 worldPosition);
 public delegate void MouseButtonEvent(bool value, Vector2 screenPosition, Vector3 worldPosition);
+public delegate void MouseHoverEvent(GameObject newTarget, GameObject oldTarget);
 public delegate void ButtonEvent(bool value);
 public delegate void VectorEvent(Vector2 value);
 public delegate void AxisEvent(float value);
@@ -17,6 +18,7 @@ public class InputManager : ManagerBase
 	public static event MouseButtonEvent	OnMouseLeftButton;
 	public static event MouseButtonEvent	OnMouseRightButton;
 	public static event MouseMoveEvent		OnMouseMove;
+	public static event MouseHoverEvent		OnMouseHover;
 
 	public static event ButtonEvent			OnCancel;
 	public static event ButtonEvent			OnShowStatus;
@@ -76,7 +78,6 @@ public class InputManager : ManagerBase
 			}
             RaycastResult nearest =  cursorHitList.GetMaximum<RaycastResult>(GetValue);
 			firstObject = nearest.gameObject;
-			worldPosition = nearest.worldPosition;
 		}
 		else
 		{
@@ -88,24 +89,16 @@ public class InputManager : ManagerBase
             firstObject = nearest.gameObject;
             worldPosition = nearest.worldPosition;
         }
-        float firstDistance = float.MaxValue;
-        
-		Vector3 firstPosition = worldPosition;
+		GameObject lastHoverObject = cursorHoverObject;
 
-        foreach (RaycastResult currentResult in cursorHitList)
-        {
-            float currentDistance = currentResult.distance;
-
-            if (currentDistance < firstDistance)
-            {
-                firstObject = currentResult.gameObject;
-                firstDistance = currentDistance;
-                firstPosition = currentResult.worldPosition;
-            }
-        }
         cursorScreenPosition = screenPosition;
         cursorWorldPosition = worldPosition;
-
+		cursorHoverObject = firstObject;
+		
+		if(lastHoverObject != firstObject)
+		{
+			OnMouseHover?.Invoke(firstObject, cursorHoverObject);
+		}
     }
 
 	public GameObject GetGameObjectUnderCursor()

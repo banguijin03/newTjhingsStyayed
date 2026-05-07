@@ -8,6 +8,7 @@ public enum UIType
 {
 	None, Loading, Title, Option, Movable, InsideOption, Info, Inside, GameQuit, 
 	StatPage, InventoryPage, CharacterPage, MapPage, SavePage, SettingPage,
+	ItemHoverInfo, ItemClickInfo, ActionHoverInfo, ActionClickInfo,
     _Length
 }
 
