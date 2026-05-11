@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class UI_TargetHoverInfo : OpenableUIBase
 {
-    [SerializeField] Vector2 shiftedPosition;
+    [SerializeField] Vector2 shiftedPosition;//위치
 
-    [SerializeField] TMPro.TextMeshProUGUI nameText;
-    [SerializeField] TMPro.TextMeshProUGUI toolTipText;
+    [SerializeField] TMPro.TextMeshProUGUI nameText;//텍스트
+    [SerializeField] TMPro.TextMeshProUGUI toolTipText;//텍스트
 
-    [SerializeField] UnityEngine.UI.Image itemIcon;
+    [SerializeField] UnityEngine.UI.Image itemIcon;//이미지
 
     CharacterBase target;
     //초기화

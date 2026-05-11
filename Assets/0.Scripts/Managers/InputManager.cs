@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -26,7 +27,10 @@ public class InputManager : ManagerBase
 	public static event VectorEvent			OnMove;
 	public static event Action				OnAnyKey;
 
-	PlayerInput targetInput;
+    static ISelectable _cursorHoverSelectable;
+    public static ISelectable CursorHoverSelectable => _cursorHoverSelectable;
+
+    PlayerInput targetInput;
 	Dictionary<string, InputAction> actionDictionary = new();
 	List<RaycastResult> cursorHitList = new();
 
@@ -90,15 +94,20 @@ public class InputManager : ManagerBase
             worldPosition = nearest.worldPosition;
         }
 		GameObject lastHoverObject = cursorHoverObject;
+		ISelectable lastHoverSelectable = _cursorHoverSelectable;
 
         cursorScreenPosition = screenPosition;
         cursorWorldPosition = worldPosition;
 		cursorHoverObject = firstObject;
-		
-		if(lastHoverObject != firstObject)
+
+        Debug.Log(firstObject);
+
+        _cursorHoverSelectable = cursorHoverObject?.GetComponent<ISelectable>();
+
+        if (lastHoverObject != firstObject)
 		{
-			OnMouseHover?.Invoke(firstObject, cursorHoverObject);
-		}
+            OnMouseHover?.Invoke(firstObject, lastHoverObject);
+        }
     }
 
 	public GameObject GetGameObjectUnderCursor()
@@ -159,6 +168,7 @@ public class InputManager : ManagerBase
 
 	void CursorPositionChanged(Vector2 screenPosition)
 	{
-		OnMouseMove?.Invoke(cursorScreenPosition, cursorWorldPosition);
+        RefreshGameObjectUnderCursor(screenPosition);
+        OnMouseMove?.Invoke(cursorScreenPosition, cursorWorldPosition);
 	}
 }

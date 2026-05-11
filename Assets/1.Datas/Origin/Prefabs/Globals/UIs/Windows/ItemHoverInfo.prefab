@@ -32,10 +32,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 3347465464073102820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.4, y: 35.8}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchorMin: {x: 0.22049084, y: 0.6682154}
+  m_AnchorMax: {x: 0.9874909, y: 0.9708616}
+  m_AnchoredPosition: {x: -103.4, y: -4.299999}
+  m_SizeDelta: {x: -207.8515, y: -1.4668999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3191733496687943199
 CanvasRenderer:
@@ -92,8 +92,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -169,10 +169,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 3347465464073102820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 67.485, y: -27.14}
-  m_SizeDelta: {x: 347.97, y: 104.28}
+  m_AnchorMin: {x: 0.22049084, y: 0.119}
+  m_AnchorMax: {x: 0.9874909, y: 0.6682154}
+  m_AnchoredPosition: {x: 2.508789, y: 0.5814018}
+  m_SizeDelta: {x: -2.0123901, y: 1.7173004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6603759239423314361
 CanvasRenderer:
@@ -232,8 +232,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -315,8 +315,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 150}
+  m_AnchoredPosition: {x: -49.2645, y: -30.4183}
+  m_SizeDelta: {x: 401.4711, y: 89.1633}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5833521672178588023
 CanvasRenderer:
@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6055f085177e9ba41ab4b7c8c981a47d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_TargetHoverInfo
-  shiftedPosition: {x: 500, y: -5}
+  shiftedPosition: {x: 0, y: 0}
   nameText: {fileID: 2268688114103076162}
   toolTipText: {fileID: 3798430971104291489}
   itemIcon: {fileID: 8941721007979915032}
@@ -407,7 +407,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 80}
+  m_SizeDelta: {x: 40, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &199760411718671381
 CanvasRenderer:
@@ -480,10 +480,10 @@ RectTransform:
   - {fileID: 1462128499982765908}
   m_Father: {fileID: 3347465464073102820}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -173.3, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0.030838905, y: 0.08535387}
+  m_AnchorMax: {x: 0.21300001, y: 0.9035693}
+  m_AnchoredPosition: {x: -1.829773, y: -0.7999916}
+  m_SizeDelta: {x: -4.3404503, y: -9.599983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3615688288483773727
 CanvasRenderer:

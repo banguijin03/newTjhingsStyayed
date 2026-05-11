@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -118,19 +118,19 @@ TextureImporter:
       name: Cabbage_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 8
-        height: 8
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 81ff0b92820253200800000000000000
+      spriteID: 1c147e0798131cd41aff9ba4294a9714
       internalID: 159068718711766808
       vertices: []
       indices: 
@@ -140,19 +140,19 @@ TextureImporter:
       name: Cabbage_1
       rect:
         serializedVersion: 2
-        x: 18
-        y: 2
-        width: 9
-        height: 9
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 42e35bae9f7ad6730800000000000000
+      spriteID: 14b2489aff1ebb64ba4a59485a8a123c
       internalID: 3994033136373939748
       vertices: []
       indices: 
@@ -162,19 +162,19 @@ TextureImporter:
       name: Cabbage_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 1
-        width: 13
-        height: 10
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 417b3bcc2bf7848c0800000000000000
+      spriteID: 6d75b97d9a16514428d0a399c3372db5
       internalID: -4014818661885561068
       vertices: []
       indices: 
@@ -184,19 +184,19 @@ TextureImporter:
       name: Cabbage_3
       rect:
         serializedVersion: 2
-        x: 49
-        y: 1
-        width: 14
-        height: 12
+        x: 48
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fb2af3d69c5765fd0800000000000000
+      spriteID: 24dae38b3216d8d4e80e633560aa95cb
       internalID: -2353564247272742209
       vertices: []
       indices: 
@@ -208,17 +208,17 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 49
+        width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e9608f3312df28470800000000000000
+      spriteID: 19b8d6d879e79a64b9efb4dfc6192f0e
       internalID: 8395550974419666590
       vertices: []
       indices: 
@@ -228,20 +228,64 @@ TextureImporter:
       name: Cabbage_5
       rect:
         serializedVersion: 2
-        x: 112
+        x: 80
         y: 0
         width: 16
-        height: 15
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e7e5190f56c7ac430800000000000000
+      spriteID: e6a28486dc04e7b44b888b3e6e1c9933
       internalID: 3803989612537405054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cabbage_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424725c057de3ab4eb8466a39239bc3d
+      internalID: 1922384734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cabbage_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480ff81b131a641418d83a01efa04c06
+      internalID: 1629757758
       vertices: []
       indices: 
       edges: []
@@ -250,7 +294,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 05feddbb8a394a04a82a3545ff5389cb
     internalID: 0
     vertices: []
     indices: 
@@ -258,7 +302,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Cabbage_0: 159068718711766808
       Cabbage_1: 3994033136373939748
@@ -266,6 +312,8 @@ TextureImporter:
       Cabbage_3: -2353564247272742209
       Cabbage_4: 8395550974419666590
       Cabbage_5: 3803989612537405054
+      Cabbage_6: 1922384734
+      Cabbage_7: 1629757758
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

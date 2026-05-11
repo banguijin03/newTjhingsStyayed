@@ -61,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -99,7 +99,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,12 +127,12 @@ TextureImporter:
       name: Apple Tree_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 1
-        width: 42
-        height: 14
+        x: 8
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -149,12 +149,12 @@ TextureImporter:
       name: Apple Tree_1
       rect:
         serializedVersion: 2
-        x: 68
+        x: 97
         y: 0
-        width: 26
+        width: 31
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: Apple Tree_2
       rect:
         serializedVersion: 2
-        x: 100
+        x: 128
         y: 0
-        width: 26
-        height: 35
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: Apple Tree_3
       rect:
         serializedVersion: 2
-        x: 127
+        x: 160
         y: 0
-        width: 162
+        width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: Apple Tree_4
       rect:
         serializedVersion: 2
-        x: 294
+        x: 192
         y: 0
-        width: 20
-        height: 15
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -237,12 +237,12 @@ TextureImporter:
       name: Apple Tree_5
       rect:
         serializedVersion: 2
-        x: 326
+        x: 224
         y: 0
-        width: 20
-        height: 15
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -259,12 +259,12 @@ TextureImporter:
       name: Apple Tree_6
       rect:
         serializedVersion: 2
-        x: 356
+        x: 256
         y: 0
-        width: 26
-        height: 35
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -281,19 +281,19 @@ TextureImporter:
       name: Apple Tree_7
       rect:
         serializedVersion: 2
-        x: 383
+        x: 296
         y: 0
-        width: 66
-        height: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 737fcf061f4378310800000000000000
+      spriteID: b70c3d974e75ba64382d5865702eb6f9
       internalID: 1407151619895523127
       vertices: []
       indices: 
@@ -303,20 +303,152 @@ TextureImporter:
       name: Apple Tree_8
       rect:
         serializedVersion: 2
-        x: 454
+        x: 384
         y: 0
-        width: 20
-        height: 15
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb7e3aa137cd6448809a8336f70cfb3
+      internalID: 2836272480419611163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Apple Tree_9
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59716e2689e765b41809fbd60a4c4b59
+      internalID: -395739452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Apple Tree_10
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b1280a13bc67c5720800000000000000
-      internalID: 2836272480419611163
+      spriteID: f39d4b8ab24eb4b40a47ef094390910f
+      internalID: 1107127052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Apple Tree_11
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 0
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5866453f4049b7b48815fff4259be4c8
+      internalID: 1818949415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Apple Tree_12
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 0
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55915d90e516d945a93afa92eb6969b
+      internalID: 279376194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Apple Tree_13
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de29794baaec81d41aace811144fb301
+      internalID: 1518135279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Apple Tree_14
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe0ca2200d518a49b87c71e28c79935
+      internalID: 1073179945
       vertices: []
       indices: 
       edges: []
@@ -325,7 +457,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c8e122b0aad4f9e43a2745a2370a5ad1
     internalID: 0
     vertices: []
     indices: 
@@ -333,10 +465,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":48.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Apple Tree_0: 2743908798377430180
       Apple Tree_1: 3444122947068569106
+      Apple Tree_10: 1107127052
+      Apple Tree_11: 1818949415
+      Apple Tree_12: 279376194
+      Apple Tree_13: 1518135279
+      Apple Tree_14: 1073179945
       Apple Tree_2: 615104261593676046
       Apple Tree_3: 6601318209578994367
       Apple Tree_4: 5643949189886210659
@@ -344,6 +483,7 @@ TextureImporter:
       Apple Tree_6: -8514361717880599117
       Apple Tree_7: 1407151619895523127
       Apple Tree_8: 2836272480419611163
+      Apple Tree_9: -395739452
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

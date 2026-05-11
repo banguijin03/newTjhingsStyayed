@@ -146,11 +146,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 101
-        width: 33
-        height: 43
+        y: 96
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -168,11 +168,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 101
-        width: 33
-        height: 43
+        y: 96
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -190,11 +190,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 101
-        width: 33
-        height: 43
+        y: 96
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -212,11 +212,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 101
-        width: 33
-        height: 43
+        y: 96
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -234,11 +234,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 101
+        y: 96
         width: 32
-        height: 43
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -256,11 +256,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 53
-        width: 33
-        height: 43
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -278,11 +278,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 53
-        width: 33
-        height: 43
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -300,11 +300,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 53
-        width: 33
-        height: 43
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -322,11 +322,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 53
-        width: 33
-        height: 43
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -344,11 +344,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 53
+        y: 48
         width: 32
-        height: 43
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -366,11 +366,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 5
-        width: 33
-        height: 43
+        y: 0
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -388,11 +388,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 5
-        width: 33
-        height: 43
+        y: 0
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -410,11 +410,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 5
-        width: 33
-        height: 43
+        y: 0
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -432,11 +432,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 5
-        width: 33
-        height: 43
+        y: 0
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -454,11 +454,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 5
+        y: 0
         width: 32
-        height: 43
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -475,7 +475,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bebdce8596a1d7e45aef7f54fdfdba19
     internalID: 0
     vertices: []
     indices: 
@@ -483,7 +483,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Clock 2_0: -1397385160238079261
       Clock 2_1: -5550840636909881875

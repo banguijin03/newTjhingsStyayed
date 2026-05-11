@@ -3,56 +3,58 @@ using UnityEngine;
 
 public class StatModule : CharacterModule
 {
-    public Stat HP;
-    public Stat Hunger;
-    public Stat Thirst;
-    public Stat Mood;
+    public FillValue HP      = new FillValue(100, 100);
+    public FillValue Hunger  = new FillValue(100, 100);
+    public FillValue Thirst  = new FillValue(100, 100);
+    public FillValue Feeling = new FillValue(100, 100);
 
-    public override void OnRegistration(CharacterBase newOwner)
+    public bool IsDead => HP.Current <= 0;
+    public bool IsHungry => Hunger.Current <= 0;
+    public bool IsThirst => Thirst.Current <= 0;
+
+    public bool IsPoison=false;
+    public bool IsRunning=false;
+    public bool IsBurn=false;
+
+    void Start()
     {
-        base.OnRegistration(newOwner);
-
-        HP = new Stat("HP", 100, 100);
-        Hunger = new Stat("Hunger", 100, 100);
-        Thirst = new Stat("Thirst", 100, 100);
-        Mood = new Stat("Mood", 100, 100);
+        StartCoroutine(StatusRoutine());
     }
 
-    //너 지금 이 행동하고 있는지에 대한 질문
-
-    //달리고 있니
-    public bool isRunning;
-    //독상태니
-    public bool isPoison;
-    //화상 
-    public bool isBurn;
-    //둔화
-    public bool isSlow;
-
-    //배고프니
-    public bool isStarving => Hunger.IsEmpty;
-    //목마르니
-    public bool isThirst => Thirst.IsEmpty;
-
-    IEnumerator DecreaseNeedsRoutine()
+    IEnumerator StatusRoutine()
     {
         while (true)
         {
             yield return new WaitForSeconds(1f);
 
-            if (isStarving)
+            if (IsDead) yield break;
+
+            Hunger.DecreaseCurrent(1);
+            Thirst.DecreaseCurrent(1);
+
+            if(IsHungry)
             {
-                HP.Decrease(1);
+                HP.DecreaseCurrent(1);
             }
-            else if (isThirst)
+            if(IsThirst)
             {
-                HP.Decrease(1);
+                HP.DecreaseCurrent(1);
             }
-            else
+            if (IsPoison)
             {
-                Hunger.Decrease(1);
-                Thirst.Decrease(1);
+                HP.DecreaseCurrent(1);
             }
+            if (IsRunning)
+            {
+                Hunger.DecreaseCurrent(1);
+                Thirst.DecreaseCurrent(1);
+            }
+            if (IsBurn)
+            {
+                HP.DecreaseCurrent(1);
+            }
+           //if(IsHallucination)
+           //if(IsSlow)
         }
     }
 }
