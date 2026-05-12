@@ -4,27 +4,28 @@ using UnityEngine.UI;
 public class UI_HungerBar : UIBase
 {
     [SerializeField] Slider hungerBar;
-
     [SerializeField] CharacterBase targetCharacter;
 
     StatModule statModule;
 
-    public override void Registration(UIManager manager)
+    void Start()
     {
-        base.Registration(manager);
+        hungerBar.minValue = 0f;
+        hungerBar.maxValue = 1f;
+        hungerBar.interactable = false;
 
-        statModule = targetCharacter.GetModule<StatModule>();
+        statModule = targetCharacter.GetComponent<StatModule>();
 
-        statModule.Hunger.OnValueChanged -= RefreshHungerBar;
-        statModule.Hunger.OnValueChanged += RefreshHungerBar;
+        if (statModule != null)
+        {
+            statModule.Hunger.OnValueChanged += RefreshHungerBar;
 
-        RefreshHungerBar(statModule.Hunger.Current, statModule.Hunger.Max);
+            RefreshHungerBar(statModule.Hunger.Current, statModule.Hunger.Max);
+        }
     }
 
-    public override void Unregistration(UIManager manager)
+    void OnDestroy()
     {
-        base.Unregistration(manager);
-
         if (statModule != null)
         {
             statModule.Hunger.OnValueChanged -= RefreshHungerBar;

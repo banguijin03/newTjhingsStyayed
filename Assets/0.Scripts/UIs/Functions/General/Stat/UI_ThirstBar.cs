@@ -4,27 +4,28 @@ using UnityEngine.UI;
 public class UI_ThirstBar : UIBase
 {
     [SerializeField] Slider thirstBar;
-
     [SerializeField] CharacterBase targetCharacter;
 
     StatModule statModule;
 
-    public override void Registration(UIManager manager)
+    void Start()
     {
-        base.Registration(manager);
+        thirstBar.minValue = 0f;
+        thirstBar.maxValue = 1f;
+        thirstBar.interactable = false;
 
-        statModule = targetCharacter.GetModule<StatModule>();
+        statModule = targetCharacter.GetComponent<StatModule>();
 
-        statModule.Thirst.OnValueChanged -= RefreshThirstBar;
-        statModule.Thirst.OnValueChanged += RefreshThirstBar;
+        if (statModule != null)
+        {
+            statModule.Thirst.OnValueChanged += RefreshThirstBar;
 
-        RefreshThirstBar(statModule.Thirst.Current, statModule.Thirst.Max);
+            RefreshThirstBar(statModule.Thirst.Current, statModule.Thirst.Max);
+        }
     }
 
-    public override void Unregistration(UIManager manager)
+    void OnDestroy()
     {
-        base.Unregistration(manager);
-
         if (statModule != null)
         {
             statModule.Thirst.OnValueChanged -= RefreshThirstBar;

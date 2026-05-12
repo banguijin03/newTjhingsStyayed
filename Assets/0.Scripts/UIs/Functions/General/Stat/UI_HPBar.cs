@@ -4,27 +4,30 @@ using UnityEngine.UI;
 public class UI_HPBar : UIBase
 {
     [SerializeField] Slider hpBar;
-
     [SerializeField] CharacterBase targetCharacter;
 
     StatModule statModule;
 
-    public override void Registration(UIManager manager)
+    void Start()
     {
-        base.Registration(manager);
-
         statModule = targetCharacter.GetModule<StatModule>();
 
-        statModule.HP.OnValueChanged -= RefreshHPBar;
-        statModule.HP.OnValueChanged += RefreshHPBar;
+        hpBar.minValue = 0f;
+        hpBar.maxValue = 1f;
+        hpBar.interactable = false;
 
-        RefreshHPBar(statModule.HP.Current, statModule.HP.Max);
+        statModule = targetCharacter.GetComponent<StatModule>();
+
+        if (statModule != null)
+        {
+            statModule.HP.OnValueChanged += RefreshHPBar;
+
+            RefreshHPBar(statModule.HP.Current, statModule.HP.Max);
+        }
     }
 
-    public override void Unregistration(UIManager manager)
+    void OnDestroy()
     {
-        base.Unregistration(manager);
-
         if (statModule != null)
         {
             statModule.HP.OnValueChanged -= RefreshHPBar;

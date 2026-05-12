@@ -100,8 +100,6 @@ public class InputManager : ManagerBase
         cursorWorldPosition = worldPosition;
 		cursorHoverObject = firstObject;
 
-        Debug.Log(firstObject);
-
         _cursorHoverSelectable = cursorHoverObject?.GetComponent<ISelectable>();
 
         if (lastHoverObject != firstObject)
