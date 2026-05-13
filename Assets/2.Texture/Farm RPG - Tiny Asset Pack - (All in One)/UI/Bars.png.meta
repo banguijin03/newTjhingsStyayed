@@ -1370,13 +1370,13 @@ TextureImporter:
       name: Bars_87
       rect:
         serializedVersion: 2
-        x: 144
-        y: 32
-        width: 48
-        height: 16
+        x: 147
+        y: 35
+        width: 31
+        height: 7
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 6, z: 16, w: 9}
+      border: {x: 3, y: 3, z: 2, w: 3}
       customData: 
       outline: []
       physicsShape: []
@@ -1384,6 +1384,28 @@ TextureImporter:
       bones: []
       spriteID: e79f05c6eeafc514093a998de1b54c8e
       internalID: 2096862726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bars_21
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 35
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 1, y: 2, z: 2, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22dfce4c794a6324bb770415773a355c
+      internalID: -554362396459424350
       vertices: []
       indices: 
       edges: []
