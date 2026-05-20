@@ -94,7 +94,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -132,7 +132,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -153,6 +153,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -160,12 +173,12 @@ TextureImporter:
       name: Root Water 2_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 191
-        width: 21
-        height: 28
+        x: 0
+        y: 192
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -182,12 +195,12 @@ TextureImporter:
       name: Root Water 2_1
       rect:
         serializedVersion: 2
-        x: 40
+        x: 32
         y: 192
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -204,12 +217,12 @@ TextureImporter:
       name: Root Water 2_2
       rect:
         serializedVersion: 2
-        x: 72
+        x: 64
         y: 192
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -226,12 +239,12 @@ TextureImporter:
       name: Root Water 2_3
       rect:
         serializedVersion: 2
-        x: 104
+        x: 96
         y: 192
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -248,12 +261,12 @@ TextureImporter:
       name: Root Water 2_4
       rect:
         serializedVersion: 2
-        x: 8
-        y: 143
-        width: 21
-        height: 28
+        x: 0
+        y: 144
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -270,12 +283,12 @@ TextureImporter:
       name: Root Water 2_5
       rect:
         serializedVersion: 2
-        x: 40
+        x: 32
         y: 144
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -292,12 +305,12 @@ TextureImporter:
       name: Root Water 2_6
       rect:
         serializedVersion: 2
-        x: 72
+        x: 64
         y: 144
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -314,12 +327,12 @@ TextureImporter:
       name: Root Water 2_7
       rect:
         serializedVersion: 2
-        x: 104
+        x: 96
         y: 144
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -336,12 +349,12 @@ TextureImporter:
       name: Root Water 2_8
       rect:
         serializedVersion: 2
-        x: 8
-        y: 95
-        width: 21
-        height: 28
+        x: 0
+        y: 96
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -358,12 +371,12 @@ TextureImporter:
       name: Root Water 2_9
       rect:
         serializedVersion: 2
-        x: 40
+        x: 32
         y: 96
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -380,12 +393,12 @@ TextureImporter:
       name: Root Water 2_10
       rect:
         serializedVersion: 2
-        x: 72
+        x: 64
         y: 96
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -402,12 +415,12 @@ TextureImporter:
       name: Root Water 2_11
       rect:
         serializedVersion: 2
-        x: 104
+        x: 96
         y: 96
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -424,12 +437,12 @@ TextureImporter:
       name: Root Water 2_12
       rect:
         serializedVersion: 2
-        x: 8
-        y: 47
-        width: 21
-        height: 28
+        x: 0
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -446,12 +459,12 @@ TextureImporter:
       name: Root Water 2_13
       rect:
         serializedVersion: 2
-        x: 40
+        x: 32
         y: 48
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -468,12 +481,12 @@ TextureImporter:
       name: Root Water 2_14
       rect:
         serializedVersion: 2
-        x: 72
+        x: 64
         y: 48
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -490,12 +503,12 @@ TextureImporter:
       name: Root Water 2_15
       rect:
         serializedVersion: 2
-        x: 104
+        x: 96
         y: 48
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -512,12 +525,12 @@ TextureImporter:
       name: Root Water 2_16
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 0
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -534,12 +547,12 @@ TextureImporter:
       name: Root Water 2_17
       rect:
         serializedVersion: 2
-        x: 40
+        x: 32
         y: 0
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -556,12 +569,12 @@ TextureImporter:
       name: Root Water 2_18
       rect:
         serializedVersion: 2
-        x: 72
+        x: 64
         y: 0
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -578,12 +591,12 @@ TextureImporter:
       name: Root Water 2_19
       rect:
         serializedVersion: 2
-        x: 104
+        x: 96
         y: 0
-        width: 21
-        height: 27
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -600,7 +613,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7d25ed1755b1dc34697c9d6ab978a3a0
     internalID: 0
     vertices: []
     indices: 
@@ -608,7 +621,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Root Water 2_0: -417375001945975087
       Root Water 2_1: -5233844159151941344

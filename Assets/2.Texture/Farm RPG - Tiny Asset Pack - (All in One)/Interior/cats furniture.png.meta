@@ -291,6 +291,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -298,12 +311,12 @@ TextureImporter:
       name: cats furniture_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 95
-        width: 24
-        height: 33
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -320,12 +333,12 @@ TextureImporter:
       name: cats furniture_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 0
-        width: 23
-        height: 128
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -342,12 +355,12 @@ TextureImporter:
       name: cats furniture_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 0
-        width: 23
-        height: 128
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -364,12 +377,12 @@ TextureImporter:
       name: cats furniture_3
       rect:
         serializedVersion: 2
-        x: 98
+        x: 96
         y: 96
-        width: 26
-        height: 22
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -386,12 +399,12 @@ TextureImporter:
       name: cats furniture_4
       rect:
         serializedVersion: 2
-        x: 130
+        x: 128
         y: 96
-        width: 25
-        height: 22
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -408,12 +421,12 @@ TextureImporter:
       name: cats furniture_5
       rect:
         serializedVersion: 2
-        x: 165
+        x: 160
         y: 96
-        width: 21
-        height: 23
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -430,12 +443,12 @@ TextureImporter:
       name: cats furniture_6
       rect:
         serializedVersion: 2
-        x: 197
+        x: 192
         y: 96
-        width: 21
-        height: 23
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -452,12 +465,12 @@ TextureImporter:
       name: cats furniture_7
       rect:
         serializedVersion: 2
-        x: 229
+        x: 224
         y: 96
-        width: 22
-        height: 24
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -474,12 +487,12 @@ TextureImporter:
       name: cats furniture_8
       rect:
         serializedVersion: 2
-        x: 258
-        y: 100
-        width: 13
-        height: 18
+        x: 256
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -496,12 +509,12 @@ TextureImporter:
       name: cats furniture_9
       rect:
         serializedVersion: 2
-        x: 273
-        y: 100
-        width: 15
-        height: 18
+        x: 288
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -518,12 +531,12 @@ TextureImporter:
       name: cats furniture_10
       rect:
         serializedVersion: 2
-        x: 289
-        y: 112
-        width: 14
-        height: 11
+        x: 320
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -540,12 +553,12 @@ TextureImporter:
       name: cats furniture_11
       rect:
         serializedVersion: 2
-        x: 289
-        y: 95
-        width: 31
-        height: 17
+        x: 352
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -562,12 +575,12 @@ TextureImporter:
       name: cats furniture_12
       rect:
         serializedVersion: 2
-        x: 305
-        y: 112
-        width: 14
-        height: 12
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -584,12 +597,12 @@ TextureImporter:
       name: cats furniture_13
       rect:
         serializedVersion: 2
-        x: 327
-        y: 112
-        width: 19
-        height: 13
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -606,12 +619,12 @@ TextureImporter:
       name: cats furniture_14
       rect:
         serializedVersion: 2
-        x: 358
-        y: 112
-        width: 19
-        height: 13
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -628,12 +641,12 @@ TextureImporter:
       name: cats furniture_15
       rect:
         serializedVersion: 2
-        x: 387
-        y: 112
-        width: 9
-        height: 12
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -650,12 +663,12 @@ TextureImporter:
       name: cats furniture_16
       rect:
         serializedVersion: 2
-        x: 3
-        y: 63
-        width: 24
-        height: 33
+        x: 128
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -672,12 +685,12 @@ TextureImporter:
       name: cats furniture_17
       rect:
         serializedVersion: 2
-        x: 327
-        y: 96
-        width: 19
-        height: 15
+        x: 160
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -694,12 +707,12 @@ TextureImporter:
       name: cats furniture_18
       rect:
         serializedVersion: 2
-        x: 358
-        y: 96
-        width: 19
-        height: 15
+        x: 192
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -716,12 +729,12 @@ TextureImporter:
       name: cats furniture_19
       rect:
         serializedVersion: 2
-        x: 387
-        y: 96
-        width: 9
-        height: 12
+        x: 224
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -738,12 +751,12 @@ TextureImporter:
       name: cats furniture_20
       rect:
         serializedVersion: 2
-        x: 98
+        x: 256
         y: 64
-        width: 26
-        height: 22
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -760,12 +773,12 @@ TextureImporter:
       name: cats furniture_21
       rect:
         serializedVersion: 2
-        x: 130
+        x: 288
         y: 64
-        width: 25
-        height: 22
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -782,12 +795,12 @@ TextureImporter:
       name: cats furniture_22
       rect:
         serializedVersion: 2
-        x: 165
+        x: 320
         y: 64
-        width: 21
-        height: 23
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -804,12 +817,12 @@ TextureImporter:
       name: cats furniture_23
       rect:
         serializedVersion: 2
-        x: 197
+        x: 352
         y: 64
-        width: 21
-        height: 23
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -826,12 +839,12 @@ TextureImporter:
       name: cats furniture_24
       rect:
         serializedVersion: 2
-        x: 229
-        y: 64
-        width: 22
-        height: 24
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -848,12 +861,12 @@ TextureImporter:
       name: cats furniture_25
       rect:
         serializedVersion: 2
-        x: 258
-        y: 68
-        width: 13
-        height: 18
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -870,12 +883,12 @@ TextureImporter:
       name: cats furniture_26
       rect:
         serializedVersion: 2
-        x: 273
-        y: 68
-        width: 15
-        height: 18
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -892,12 +905,12 @@ TextureImporter:
       name: cats furniture_27
       rect:
         serializedVersion: 2
-        x: 289
-        y: 80
-        width: 14
-        height: 11
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -914,12 +927,12 @@ TextureImporter:
       name: cats furniture_28
       rect:
         serializedVersion: 2
-        x: 289
-        y: 63
-        width: 31
-        height: 17
+        x: 128
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -936,12 +949,12 @@ TextureImporter:
       name: cats furniture_29
       rect:
         serializedVersion: 2
-        x: 305
-        y: 80
-        width: 14
-        height: 12
+        x: 160
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -958,12 +971,12 @@ TextureImporter:
       name: cats furniture_30
       rect:
         serializedVersion: 2
-        x: 327
-        y: 80
-        width: 19
-        height: 13
+        x: 192
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -980,12 +993,12 @@ TextureImporter:
       name: cats furniture_31
       rect:
         serializedVersion: 2
-        x: 358
-        y: 80
-        width: 19
-        height: 13
+        x: 224
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1002,12 +1015,12 @@ TextureImporter:
       name: cats furniture_32
       rect:
         serializedVersion: 2
-        x: 387
-        y: 80
-        width: 9
-        height: 12
+        x: 256
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1024,12 +1037,12 @@ TextureImporter:
       name: cats furniture_33
       rect:
         serializedVersion: 2
-        x: 3
-        y: 31
-        width: 24
-        height: 33
+        x: 288
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1046,12 +1059,12 @@ TextureImporter:
       name: cats furniture_34
       rect:
         serializedVersion: 2
-        x: 327
-        y: 64
-        width: 19
-        height: 15
+        x: 320
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1068,12 +1081,12 @@ TextureImporter:
       name: cats furniture_35
       rect:
         serializedVersion: 2
-        x: 358
-        y: 64
-        width: 19
-        height: 15
+        x: 352
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1090,12 +1103,12 @@ TextureImporter:
       name: cats furniture_36
       rect:
         serializedVersion: 2
-        x: 387
-        y: 64
-        width: 9
-        height: 12
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1112,12 +1125,12 @@ TextureImporter:
       name: cats furniture_37
       rect:
         serializedVersion: 2
-        x: 98
-        y: 32
-        width: 26
-        height: 22
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1134,12 +1147,12 @@ TextureImporter:
       name: cats furniture_38
       rect:
         serializedVersion: 2
-        x: 130
-        y: 32
-        width: 25
-        height: 22
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1156,12 +1169,12 @@ TextureImporter:
       name: cats furniture_39
       rect:
         serializedVersion: 2
-        x: 165
-        y: 32
-        width: 21
-        height: 23
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1178,12 +1191,12 @@ TextureImporter:
       name: cats furniture_40
       rect:
         serializedVersion: 2
-        x: 197
-        y: 32
-        width: 21
-        height: 23
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1200,12 +1213,12 @@ TextureImporter:
       name: cats furniture_41
       rect:
         serializedVersion: 2
-        x: 229
-        y: 32
-        width: 22
-        height: 24
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1222,12 +1235,12 @@ TextureImporter:
       name: cats furniture_42
       rect:
         serializedVersion: 2
-        x: 258
-        y: 36
-        width: 13
-        height: 18
+        x: 192
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1244,12 +1257,12 @@ TextureImporter:
       name: cats furniture_43
       rect:
         serializedVersion: 2
-        x: 273
-        y: 36
-        width: 15
-        height: 18
+        x: 224
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1266,12 +1279,12 @@ TextureImporter:
       name: cats furniture_44
       rect:
         serializedVersion: 2
-        x: 289
-        y: 48
-        width: 14
-        height: 11
+        x: 256
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1288,12 +1301,12 @@ TextureImporter:
       name: cats furniture_45
       rect:
         serializedVersion: 2
-        x: 289
-        y: 31
-        width: 31
-        height: 17
+        x: 288
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1310,12 +1323,12 @@ TextureImporter:
       name: cats furniture_46
       rect:
         serializedVersion: 2
-        x: 305
-        y: 48
-        width: 14
-        height: 12
+        x: 320
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1332,12 +1345,12 @@ TextureImporter:
       name: cats furniture_47
       rect:
         serializedVersion: 2
-        x: 327
-        y: 48
-        width: 19
-        height: 13
+        x: 352
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1354,19 +1367,19 @@ TextureImporter:
       name: cats furniture_48
       rect:
         serializedVersion: 2
-        x: 358
-        y: 48
-        width: 19
-        height: 13
+        x: 384
+        y: 112
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 911846e9c9acabbc0800000000000000
+      spriteID: a94aa3c5a05ba0145a4d19fa365c9a3b
       internalID: -3766475364320902887
       vertices: []
       indices: 
@@ -1376,19 +1389,19 @@ TextureImporter:
       name: cats furniture_49
       rect:
         serializedVersion: 2
-        x: 3
-        y: 0
-        width: 24
-        height: 32
+        x: 384
+        y: 96
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: af7102e608a115c20800000000000000
+      spriteID: 6f6a2dc37d4a6d34bb3527525bb9ac3a
       internalID: 3193362749688125434
       vertices: []
       indices: 
@@ -1398,19 +1411,19 @@ TextureImporter:
       name: cats furniture_50
       rect:
         serializedVersion: 2
-        x: 327
-        y: 32
-        width: 19
-        height: 15
+        x: 384
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d9422c318db7e7220800000000000000
+      spriteID: 0f2edc8d204f29d4ca19b745bd242270
       internalID: 2485560212329735325
       vertices: []
       indices: 
@@ -1420,207 +1433,9 @@ TextureImporter:
       name: cats furniture_51
       rect:
         serializedVersion: 2
-        x: 358
-        y: 32
-        width: 19
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ede2f1f1f8af167c0800000000000000
-      internalID: -4079704294811554082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cats furniture_52
-      rect:
-        serializedVersion: 2
-        x: 98
-        y: 0
-        width: 26
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 241eb7121113432f0800000000000000
-      internalID: -994115668096065214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cats furniture_53
-      rect:
-        serializedVersion: 2
-        x: 130
-        y: 0
-        width: 25
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f43c9a1949c8d33a0800000000000000
-      internalID: -6684031702221077681
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cats furniture_54
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 0
-        width: 21
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 238f2163d48f931b0800000000000000
-      internalID: -5676232844820416462
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cats furniture_55
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 0
-        width: 21
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23b358fee677cfc60800000000000000
-      internalID: 7853283168575896370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cats furniture_56
-      rect:
-        serializedVersion: 2
-        x: 229
-        y: 0
-        width: 22
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fcdcf3ecaecc81450800000000000000
-      internalID: 6059818607481703887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cats furniture_57
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 4
-        width: 13
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 258bf3a445d9a2e10800000000000000
-      internalID: 2173722755508189266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cats furniture_58
-      rect:
-        serializedVersion: 2
-        x: 273
-        y: 4
-        width: 15
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 027d4728c6bbc5010800000000000000
-      internalID: 1179023277183784736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cats furniture_59
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 16
-        width: 14
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bf08ba95ecd6d32c0800000000000000
-      internalID: -4450280123737079557
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cats furniture_60
-      rect:
-        serializedVersion: 2
-        x: 289
-        y: 0
-        width: 31
+        x: 384
+        y: 64
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1628,120 +1443,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bf8e939ea1770d2b0800000000000000
-      internalID: -5561814582336820997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cats furniture_61
-      rect:
-        serializedVersion: 2
-        x: 305
-        y: 16
-        width: 14
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d15fe7fe715e8cfe0800000000000000
-      internalID: -1168432212337560291
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cats furniture_62
-      rect:
-        serializedVersion: 2
-        x: 327
-        y: 16
-        width: 19
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eb99e5f25424a9540800000000000000
-      internalID: 5015393999945374142
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cats furniture_63
-      rect:
-        serializedVersion: 2
-        x: 358
-        y: 16
-        width: 19
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0c1e46f8fdc78e210800000000000000
-      internalID: 1362476186904879552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cats furniture_64
-      rect:
-        serializedVersion: 2
-        x: 327
-        y: 0
-        width: 19
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d6c9ac34c3bb17e90800000000000000
-      internalID: -7029631675838849939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cats furniture_65
-      rect:
-        serializedVersion: 2
-        x: 358
-        y: 0
-        width: 19
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78a030067f2fba8b0800000000000000
-      internalID: -5139747405431633273
+      spriteID: 3231eee8e23410643934ee8b7371e17d
+      internalID: -4079704294811554082
       vertices: []
       indices: 
       edges: []
@@ -1750,7 +1455,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7f6fd838fccd4104ba5f215f11c7db34
     internalID: 0
     vertices: []
     indices: 
@@ -1758,7 +1463,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       cats furniture_0: 7327102464273353075
       cats furniture_1: 6318935748381937479
@@ -1808,21 +1515,7 @@ TextureImporter:
       cats furniture_5: -5491646729445035982
       cats furniture_50: 2485560212329735325
       cats furniture_51: -4079704294811554082
-      cats furniture_52: -994115668096065214
-      cats furniture_53: -6684031702221077681
-      cats furniture_54: -5676232844820416462
-      cats furniture_55: 7853283168575896370
-      cats furniture_56: 6059818607481703887
-      cats furniture_57: 2173722755508189266
-      cats furniture_58: 1179023277183784736
-      cats furniture_59: -4450280123737079557
       cats furniture_6: 8661085203019017905
-      cats furniture_60: -5561814582336820997
-      cats furniture_61: -1168432212337560291
-      cats furniture_62: 5015393999945374142
-      cats furniture_63: 1362476186904879552
-      cats furniture_64: -7029631675838849939
-      cats furniture_65: -5139747405431633273
       cats furniture_7: 3528558263756836494
       cats furniture_8: 3009368198777236417
       cats furniture_9: -1428797110118203893

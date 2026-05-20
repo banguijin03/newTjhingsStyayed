@@ -177,6 +177,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -184,12 +197,12 @@ TextureImporter:
       name: Maple Tree Animation_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 290
-        width: 22
-        height: 33
+        x: 0
+        y: 288
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -206,12 +219,12 @@ TextureImporter:
       name: Maple Tree Animation_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 290
-        width: 27
-        height: 36
+        x: 32
+        y: 288
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -229,11 +242,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 290
-        width: 31
-        height: 38
+        y: 288
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,12 +263,12 @@ TextureImporter:
       name: Maple Tree Animation_3
       rect:
         serializedVersion: 2
-        x: 95
-        y: 290
-        width: 33
-        height: 40
+        x: 96
+        y: 288
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -273,11 +286,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 241
-        width: 33
-        height: 47
+        y: 240
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -294,12 +307,12 @@ TextureImporter:
       name: Maple Tree Animation_5
       rect:
         serializedVersion: 2
-        x: 31
-        y: 241
-        width: 39
-        height: 47
+        x: 32
+        y: 240
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -316,12 +329,12 @@ TextureImporter:
       name: Maple Tree Animation_6
       rect:
         serializedVersion: 2
-        x: 63
-        y: 241
-        width: 38
+        x: 64
+        y: 240
+        width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -338,12 +351,12 @@ TextureImporter:
       name: Maple Tree Animation_7
       rect:
         serializedVersion: 2
-        x: 63
-        y: 193
-        width: 38
+        x: 96
+        y: 240
+        width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -360,12 +373,12 @@ TextureImporter:
       name: Maple Tree Animation_8
       rect:
         serializedVersion: 2
-        x: 95
-        y: 241
-        width: 33
+        x: 0
+        y: 192
+        width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -382,12 +395,12 @@ TextureImporter:
       name: Maple Tree Animation_9
       rect:
         serializedVersion: 2
-        x: 95
-        y: 193
-        width: 33
+        x: 32
+        y: 192
+        width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -404,12 +417,12 @@ TextureImporter:
       name: Maple Tree Animation_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 193
-        width: 33
-        height: 47
+        x: 64
+        y: 192
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -426,12 +439,12 @@ TextureImporter:
       name: Maple Tree Animation_11
       rect:
         serializedVersion: 2
-        x: 31
-        y: 193
-        width: 39
-        height: 47
+        x: 96
+        y: 192
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -448,12 +461,12 @@ TextureImporter:
       name: Maple Tree Animation_12
       rect:
         serializedVersion: 2
-        x: 63
-        y: 145
-        width: 38
+        x: 0
+        y: 144
+        width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -470,12 +483,12 @@ TextureImporter:
       name: Maple Tree Animation_13
       rect:
         serializedVersion: 2
-        x: 95
-        y: 145
-        width: 33
+        x: 32
+        y: 144
+        width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -492,12 +505,12 @@ TextureImporter:
       name: Maple Tree Animation_14
       rect:
         serializedVersion: 2
-        x: 0
-        y: 145
-        width: 33
-        height: 47
+        x: 64
+        y: 144
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -514,12 +527,12 @@ TextureImporter:
       name: Maple Tree Animation_15
       rect:
         serializedVersion: 2
-        x: 31
-        y: 145
-        width: 39
-        height: 47
+        x: 96
+        y: 144
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -536,12 +549,12 @@ TextureImporter:
       name: Maple Tree Animation_16
       rect:
         serializedVersion: 2
-        x: 63
-        y: 97
-        width: 38
+        x: 0
+        y: 96
+        width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -558,12 +571,12 @@ TextureImporter:
       name: Maple Tree Animation_17
       rect:
         serializedVersion: 2
-        x: 95
-        y: 97
-        width: 33
+        x: 32
+        y: 96
+        width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -580,12 +593,12 @@ TextureImporter:
       name: Maple Tree Animation_18
       rect:
         serializedVersion: 2
-        x: 0
-        y: 97
-        width: 33
-        height: 47
+        x: 64
+        y: 96
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -602,12 +615,12 @@ TextureImporter:
       name: Maple Tree Animation_19
       rect:
         serializedVersion: 2
-        x: 31
-        y: 97
-        width: 39
-        height: 47
+        x: 96
+        y: 96
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -624,12 +637,12 @@ TextureImporter:
       name: Maple Tree Animation_20
       rect:
         serializedVersion: 2
-        x: 8
-        y: 49
-        width: 16
-        height: 13
+        x: 0
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -646,12 +659,12 @@ TextureImporter:
       name: Maple Tree Animation_21
       rect:
         serializedVersion: 2
-        x: 36
-        y: 49
-        width: 25
-        height: 13
+        x: 32
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -668,12 +681,12 @@ TextureImporter:
       name: Maple Tree Animation_22
       rect:
         serializedVersion: 2
-        x: 63
-        y: 1
-        width: 33
+        x: 64
+        y: 48
+        width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -690,12 +703,12 @@ TextureImporter:
       name: Maple Tree Animation_23
       rect:
         serializedVersion: 2
-        x: 66
-        y: 49
-        width: 35
-        height: 13
+        x: 96
+        y: 48
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -712,12 +725,12 @@ TextureImporter:
       name: Maple Tree Animation_24
       rect:
         serializedVersion: 2
-        x: 95
-        y: 1
-        width: 33
+        x: 0
+        y: 0
+        width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -734,12 +747,12 @@ TextureImporter:
       name: Maple Tree Animation_25
       rect:
         serializedVersion: 2
-        x: 104
-        y: 49
-        width: 24
-        height: 13
+        x: 32
+        y: 0
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -756,12 +769,12 @@ TextureImporter:
       name: Maple Tree Animation_26
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 30
-        height: 43
+        x: 64
+        y: 0
+        width: 32
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -778,12 +791,12 @@ TextureImporter:
       name: Maple Tree Animation_27
       rect:
         serializedVersion: 2
-        x: 31
-        y: 1
+        x: 96
+        y: 0
         width: 32
-        height: 47
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -800,7 +813,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fd67ca7deb14314459e5881618f88efb
     internalID: 0
     vertices: []
     indices: 
@@ -808,7 +821,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Maple Tree Animation_0: 1898059004527530944
       Maple Tree Animation_1: 8054312304361591864

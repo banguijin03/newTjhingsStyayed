@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,6 +117,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -125,16 +138,21 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 33
+        y: 16
+        width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 8, y: -2}
+        - {x: -3, y: -2}
+        - {x: -3, y: -5}
+        - {x: -1, y: -7}
+        - {x: 8, y: -7}
+      tessellationDetail: 0
       bones: []
       spriteID: 5556a84a566b6dca0800000000000000
       internalID: -5992401706501380779
@@ -146,17 +164,22 @@ TextureImporter:
       name: TREE TRUNKS copiar_1
       rect:
         serializedVersion: 2
-        x: 3
-        y: 15
-        width: 27
-        height: 10
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 3, y: -5}
+        - {x: 3, y: -2}
+        - {x: -8, y: -2}
+        - {x: -8, y: -7}
+        - {x: 1, y: -7}
+      tessellationDetail: 0
       bones: []
       spriteID: 302651d367e6873a0800000000000000
       internalID: -6667457794212011517
@@ -168,17 +191,22 @@ TextureImporter:
       name: TREE TRUNKS copiar_2
       rect:
         serializedVersion: 2
-        x: 35
-        y: 15
-        width: 27
-        height: 11
+        x: 32
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 8, y: -3}
+        - {x: -3, y: -3}
+        - {x: -3, y: -5}
+        - {x: -1, y: -7}
+        - {x: 8, y: -7}
+      tessellationDetail: 0
       bones: []
       spriteID: aaffb37d5ab562400800000000000000
       internalID: 299027193105481642
@@ -190,17 +218,22 @@ TextureImporter:
       name: TREE TRUNKS copiar_3
       rect:
         serializedVersion: 2
-        x: 66
-        y: 0
-        width: 28
+        x: 48
+        y: 16
+        width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 3, y: -5}
+        - {x: 3, y: -3}
+        - {x: -8, y: -3}
+        - {x: -8, y: -7}
+        - {x: 1, y: -7}
+      tessellationDetail: 0
       bones: []
       spriteID: e5327b581f3baa530800000000000000
       internalID: 3867101079962854238
@@ -212,17 +245,23 @@ TextureImporter:
       name: TREE TRUNKS copiar_4
       rect:
         serializedVersion: 2
-        x: 67
-        y: 15
-        width: 24
-        height: 10
+        x: 64
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 8, y: -2}
+        - {x: 0, y: -2}
+        - {x: -2, y: -2}
+        - {x: -2, y: -5}
+        - {x: 0, y: -7}
+        - {x: 8, y: -7}
+      tessellationDetail: 0
       bones: []
       spriteID: 1d1234b77860b0430800000000000000
       internalID: 3750098293674418641
@@ -234,17 +273,22 @@ TextureImporter:
       name: TREE TRUNKS copiar_5
       rect:
         serializedVersion: 2
-        x: 100
-        y: 15
-        width: 23
-        height: 11
+        x: 80
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -5}
+        - {x: 0, y: -2}
+        - {x: -8, y: -2}
+        - {x: -8, y: -7}
+        - {x: -2, y: -7}
+      tessellationDetail: 0
       bones: []
       spriteID: 8866347fb4a8295a0800000000000000
       internalID: -6515993651976116600
@@ -256,17 +300,22 @@ TextureImporter:
       name: TREE TRUNKS copiar_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 12
+        x: 96
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 8, y: -3}
+        - {x: -1, y: -3}
+        - {x: -1, y: -5}
+        - {x: 1, y: -7}
+        - {x: 8, y: -7}
+      tessellationDetail: 0
       bones: []
       spriteID: 0b70a49fb23122a60800000000000000
       internalID: 7647696196815423408
@@ -278,20 +327,250 @@ TextureImporter:
       name: TREE TRUNKS copiar_7
       rect:
         serializedVersion: 2
-        x: 99
-        y: 0
-        width: 27
-        height: 12
+        x: 112
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 0, y: -5}
+        - {x: 0, y: -3}
+        - {x: -8, y: -3}
+        - {x: -8, y: -7}
+        - {x: -1, y: -7}
+      tessellationDetail: 0
       bones: []
       spriteID: 495ba87b5d6f00c10800000000000000
       internalID: 2017884030829770132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TREE TRUNKS copiar_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 8, y: 0}
+        - {x: -1, y: 0}
+        - {x: -5, y: 0}
+        - {x: -5, y: -5}
+        - {x: -4, y: -7}
+        - {x: 8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcb57484bb4e184b99dd066edc0bec9
+      internalID: -1996902882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TREE TRUNKS copiar_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 6, y: -5}
+        - {x: 6, y: -2}
+        - {x: 4, y: 0}
+        - {x: -1, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: -7}
+        - {x: 4, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cecfa0c919f2d2458b119deed718d8a
+      internalID: 1257848507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TREE TRUNKS copiar_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 8, y: -1}
+        - {x: -5, y: -1}
+        - {x: -7, y: -2}
+        - {x: -7, y: -5}
+        - {x: -5, y: -7}
+        - {x: 8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52aa1b9921e04c4ea59883fc2709ba4
+      internalID: -709777915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TREE TRUNKS copiar_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -6}
+        - {x: 5, y: -3}
+        - {x: 3, y: -1}
+        - {x: -8, y: -1}
+        - {x: -8, y: -7}
+        - {x: 3, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fede035641a47bc44a02d7537aa7a696
+      internalID: 1596948100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TREE TRUNKS copiar_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 8, y: 1}
+        - {x: 0, y: 1}
+        - {x: -3, y: 0}
+        - {x: -3, y: -5}
+        - {x: -2, y: -7}
+        - {x: 8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e4c328611f226c48b0901da07b11415
+      internalID: -497613313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TREE TRUNKS copiar_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 5, y: -5}
+        - {x: 5, y: -1}
+        - {x: -1, y: 1}
+        - {x: -8, y: 1}
+        - {x: -8, y: -7}
+        - {x: 3, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e5667a3d57b4444895418e6f285202
+      internalID: 370862535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TREE TRUNKS copiar_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 8, y: 0}
+        - {x: -1, y: 0}
+        - {x: -4, y: -3}
+        - {x: -4, y: -6}
+        - {x: -3, y: -7}
+        - {x: 8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64eadf89c2ac784d8a917c4b53ad72f
+      internalID: 628021789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TREE TRUNKS copiar_15
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -6}
+        - {x: 3, y: -3}
+        - {x: 0, y: 0}
+        - {x: -8, y: 0}
+        - {x: -8, y: -7}
+        - {x: 1, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bcca40742631f448ff5b037c6d0140
+      internalID: -1738929581
       vertices: []
       indices: 
       edges: []
@@ -300,7 +579,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e4db1138da654de4a8ad3aeb465331eb
     internalID: 0
     vertices: []
     indices: 
@@ -308,16 +587,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       TREE TRUNKS copiar_0: -5992401706501380779
       TREE TRUNKS copiar_1: -6667457794212011517
+      TREE TRUNKS copiar_10: -709777915
+      TREE TRUNKS copiar_11: 1596948100
+      TREE TRUNKS copiar_12: -497613313
+      TREE TRUNKS copiar_13: 370862535
+      TREE TRUNKS copiar_14: 628021789
+      TREE TRUNKS copiar_15: -1738929581
       TREE TRUNKS copiar_2: 299027193105481642
       TREE TRUNKS copiar_3: 3867101079962854238
       TREE TRUNKS copiar_4: 3750098293674418641
       TREE TRUNKS copiar_5: -6515993651976116600
       TREE TRUNKS copiar_6: 7647696196815423408
       TREE TRUNKS copiar_7: 2017884030829770132
+      TREE TRUNKS copiar_8: -1996902882
+      TREE TRUNKS copiar_9: 1257848507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

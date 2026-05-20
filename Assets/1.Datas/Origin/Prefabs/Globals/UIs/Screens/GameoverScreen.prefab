@@ -32,10 +32,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1083915406324293743}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.16945384, y: 0.082}
+  m_AnchorMax: {x: 0.83400005, y: 0.91800004}
+  m_AnchoredPosition: {x: -0.5, y: -0.0000076293945}
+  m_SizeDelta: {x: -115.131, y: -7.1099005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1871065921513238457
 CanvasRenderer:
@@ -172,10 +172,10 @@ RectTransform:
   - {fileID: 3784771366550574433}
   m_Father: {fileID: 6725000019460881630}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.56725323, y: 0.13751413}
-  m_AnchorMax: {x: 0.90400004, y: 0.40800002}
-  m_AnchoredPosition: {x: -11.5, y: 17}
-  m_SizeDelta: {x: -109.60751, y: -114.10901}
+  m_AnchorMin: {x: 0.5568254, y: 0.11616394}
+  m_AnchorMax: {x: 0.89285713, y: 0.44211295}
+  m_AnchoredPosition: {x: 2, y: 13.000023}
+  m_SizeDelta: {x: -108.60751, y: -148.10901}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6352339581834160960
 CanvasRenderer:
@@ -310,7 +310,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.08416456, y: 0.13751413}
   m_AnchorMax: {x: 0.47453794, y: 0.44211295}
-  m_AnchoredPosition: {x: 18.5, y: 5.5}
+  m_AnchoredPosition: {x: 18.5, y: 5.500023}
   m_SizeDelta: {x: -177.60751, y: -137.10901}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4806414947070088832
@@ -590,10 +590,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 5112567749234828420}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.16846994, y: 0.078851625}
+  m_AnchorMax: {x: 0.83182335, y: 0.9211354}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -108.359406, y: -10.1192}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8478761611255194706
 CanvasRenderer:
@@ -787,5 +787,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI_GameOverScreen
   requiredUI: []
-  targetCharacter: {fileID: 7821519956803187346, guid: f4c307203fe6dc74d92e6c7e4a839b9a, type: 3}
-  deadPanel: {fileID: 498091440224294149, guid: 915e8452f821988429a2f299b31efa99, type: 3}
+  DeadScreen: {fileID: 8138401909588782911}
+  stat: {fileID: 288941505124589051, guid: 1524d5411f57aea44a5bd1a786c84a98, type: 3}

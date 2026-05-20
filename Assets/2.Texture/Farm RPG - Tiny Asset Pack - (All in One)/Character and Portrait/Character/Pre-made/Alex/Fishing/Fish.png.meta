@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,6 +117,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -124,19 +137,19 @@ TextureImporter:
       name: Fish_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 18
-        width: 9
-        height: 11
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 62615d96d5bc965e0800000000000000
+      spriteID: 1a425753e64714842872fa9045d9dadd
       internalID: -1915776564401465818
       vertices: []
       indices: 
@@ -146,19 +159,19 @@ TextureImporter:
       name: Fish_1
       rect:
         serializedVersion: 2
-        x: 20
-        y: 18
-        width: 9
-        height: 11
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 702e26e6ccc65fd80800000000000000
+      spriteID: 74a63cea8690f2b4288bab08e2a48e65
       internalID: -8217542319786499577
       vertices: []
       indices: 
@@ -168,19 +181,19 @@ TextureImporter:
       name: Fish_2
       rect:
         serializedVersion: 2
-        x: 36
-        y: 18
-        width: 9
-        height: 11
+        x: 32
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 50fe474638ea31f70800000000000000
+      spriteID: 3d39da0d3a3b2fe42ba8713c701f436b
       internalID: 9156854346723684101
       vertices: []
       indices: 
@@ -190,19 +203,19 @@ TextureImporter:
       name: Fish_3
       rect:
         serializedVersion: 2
-        x: 52
-        y: 18
-        width: 9
-        height: 11
+        x: 48
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6c687c81afb8d2ac0800000000000000
+      spriteID: 258a73cc1773d1748a45442eada173eb
       internalID: -3878289797822314810
       vertices: []
       indices: 
@@ -212,19 +225,19 @@ TextureImporter:
       name: Fish_4
       rect:
         serializedVersion: 2
-        x: 4
-        y: 2
-        width: 9
-        height: 11
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 671965faf27e6e850800000000000000
+      spriteID: 143098b8e494c0c47913e27b1a8626a7
       internalID: 6406061711972274550
       vertices: []
       indices: 
@@ -234,19 +247,19 @@ TextureImporter:
       name: Fish_5
       rect:
         serializedVersion: 2
-        x: 20
-        y: 2
-        width: 9
-        height: 11
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c9abd663a01df7c00800000000000000
+      spriteID: 0de28daa485b4f84a95cbdd8da713670
       internalID: 900668292290427548
       vertices: []
       indices: 
@@ -256,19 +269,19 @@ TextureImporter:
       name: Fish_6
       rect:
         serializedVersion: 2
-        x: 36
-        y: 2
-        width: 9
-        height: 11
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 877f461dfb8fb9fe0800000000000000
+      spriteID: 6d80be0bae9ca884e9581d428244bdfa
       internalID: -1181076974519126152
       vertices: []
       indices: 
@@ -278,19 +291,19 @@ TextureImporter:
       name: Fish_7
       rect:
         serializedVersion: 2
-        x: 52
-        y: 2
-        width: 9
-        height: 11
+        x: 48
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 08e723fee4c1bea60800000000000000
+      spriteID: e20109cb7cf401c44a626d82d8c3d802
       internalID: 7704282712893456000
       vertices: []
       indices: 
@@ -300,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3adbafb56e4cd4d4cb232aac1d0b25a4
     internalID: 0
     vertices: []
     indices: 
@@ -308,7 +321,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Fish_0: -1915776564401465818
       Fish_1: -8217542319786499577

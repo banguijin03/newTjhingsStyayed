@@ -105,6 +105,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -113,11 +126,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 31
-        width: 30
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 32
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -134,11 +147,11 @@ TextureImporter:
       name: shipping box_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 31
-        width: 14
-        height: 18
-      alignment: 0
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -156,12 +169,12 @@ TextureImporter:
       name: shipping box_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 30
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,23 +188,67 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shipping box_3
+      name: shipping box_6
       rect:
         serializedVersion: 2
-        x: 34
+        x: 0
         y: 0
-        width: 14
+        width: 16
         height: 20
-      alignment: 0
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc67c6f8fb1cb34458633536e9e49859
+      internalID: 135245313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shipping box_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 20
+      alignment: 9
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9d4a87e7ac811fa90800000000000000
-      internalID: -7282011864497085223
+      spriteID: a1119c0525cd8734b82d58a1d73c85af
+      internalID: -7962126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shipping box_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 20
+      alignment: 9
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43812c23788a4f498c97585fafee624
+      internalID: -25392592
       vertices: []
       indices: 
       edges: []
@@ -200,7 +257,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 47f8f9f3b0547ae41933fc007709424a
     internalID: 0
     vertices: []
     indices: 
@@ -208,12 +265,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       shipping box_0: 1367794608365316303
       shipping box_1: -7157048549940104350
       shipping box_2: 55871154236509573
       shipping box_3: -7282011864497085223
+      shipping box_4: 163204002
+      shipping box_5: -1606314176
+      shipping box_6: 135245313
+      shipping box_7: -7962126
+      shipping box_8: -25392592
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

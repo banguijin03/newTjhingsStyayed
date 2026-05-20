@@ -64,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,6 +123,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -130,17 +143,22 @@ TextureImporter:
       name: Birch Tree-Sheet copiar_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 15
-        width: 18
-        height: 15
+        x: 0
+        y: 0
+        width: 48
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 6, y: -25}
+        - {x: -6, y: -25}
+        - {x: -6, y: -31}
+        - {x: -4, y: -32}
+        - {x: 5, y: -32}
+      tessellationDetail: 0
       bones: []
       spriteID: 360d474c2a59ca220800000000000000
       internalID: 2498536419597013091
@@ -152,17 +170,23 @@ TextureImporter:
       name: Birch Tree-Sheet copiar_1
       rect:
         serializedVersion: 2
-        x: 67
-        y: 14
-        width: 10
-        height: 7
+        x: 48
+        y: 0
+        width: 48
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 2, y: -29}
+        - {x: 1, y: -28}
+        - {x: -1, y: -28}
+        - {x: -2, y: -29}
+        - {x: -2, y: -32}
+        - {x: 2, y: -32}
+      tessellationDetail: 0
       bones: []
       spriteID: a78facbc4ac9173f0800000000000000
       internalID: -904769818517112710
@@ -174,17 +198,24 @@ TextureImporter:
       name: Birch Tree-Sheet copiar_2
       rect:
         serializedVersion: 2
-        x: 115
-        y: 14
-        width: 11
-        height: 14
+        x: 96
+        y: 0
+        width: 48
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 5, y: -29}
+        - {x: 4, y: -25}
+        - {x: 0, y: -24}
+        - {x: -3, y: -25}
+        - {x: -4, y: -31}
+        - {x: -1, y: -32}
+        - {x: 2, y: -32}
+      tessellationDetail: 0
       bones: []
       spriteID: 8431858aae22f6fd0800000000000000
       internalID: -2346618489594703032
@@ -196,17 +227,23 @@ TextureImporter:
       name: Birch Tree-Sheet copiar_3
       rect:
         serializedVersion: 2
-        x: 157
-        y: 15
-        width: 22
-        height: 30
+        x: 144
+        y: 0
+        width: 48
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 7, y: -27}
+        - {x: 2, y: -23}
+        - {x: -8, y: -25}
+        - {x: -8, y: -29}
+        - {x: -7, y: -32}
+        - {x: 5, y: -32}
+      tessellationDetail: 0
       bones: []
       spriteID: 8c376c21b2b458820800000000000000
       internalID: 2919822581790307272
@@ -218,17 +255,23 @@ TextureImporter:
       name: Birch Tree-Sheet copiar_4
       rect:
         serializedVersion: 2
-        x: 201
-        y: 15
-        width: 32
-        height: 41
+        x: 192
+        y: 0
+        width: 48
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 6, y: -29}
+        - {x: 5, y: -26}
+        - {x: -3, y: -26}
+        - {x: -5, y: -28}
+        - {x: -4, y: -32}
+        - {x: 6, y: -32}
+      tessellationDetail: 0
       bones: []
       spriteID: a51a05000ce6c80c0800000000000000
       internalID: -4572157750769835686
@@ -240,17 +283,21 @@ TextureImporter:
       name: Birch Tree-Sheet copiar_5
       rect:
         serializedVersion: 2
-        x: 243
-        y: 15
-        width: 46
-        height: 62
+        x: 240
+        y: 0
+        width: 48
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 5, y: -25}
+        - {x: -6, y: -25}
+        - {x: -8, y: -32}
+        - {x: 7, y: -32}
+      tessellationDetail: 0
       bones: []
       spriteID: 0d111c836fb05c700800000000000000
       internalID: 559866880819532240
@@ -262,17 +309,21 @@ TextureImporter:
       name: Birch Tree-Sheet copiar_6
       rect:
         serializedVersion: 2
-        x: 291
-        y: 15
-        width: 46
-        height: 62
+        x: 288
+        y: 0
+        width: 48
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 5, y: -23}
+        - {x: -6, y: -23}
+        - {x: -8, y: -32}
+        - {x: 7, y: -32}
+      tessellationDetail: 0
       bones: []
       spriteID: a6654502fac07da20800000000000000
       internalID: 3086950015886972522
@@ -284,17 +335,21 @@ TextureImporter:
       name: Birch Tree-Sheet copiar_7
       rect:
         serializedVersion: 2
-        x: 339
-        y: 15
-        width: 46
-        height: 62
+        x: 336
+        y: 0
+        width: 48
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 4, y: -24}
+        - {x: -5, y: -25}
+        - {x: -8, y: -32}
+        - {x: 7, y: -32}
+      tessellationDetail: 0
       bones: []
       spriteID: 07941799846cb7950800000000000000
       internalID: 6447965306625280368
@@ -306,17 +361,23 @@ TextureImporter:
       name: Birch Tree-Sheet copiar_8
       rect:
         serializedVersion: 2
-        x: 387
-        y: 15
-        width: 46
-        height: 62
+        x: 384
+        y: 0
+        width: 48
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 4, y: -24}
+        - {x: -4, y: -24}
+        - {x: -8, y: -31}
+        - {x: -3, y: -33}
+        - {x: 3, y: -33}
+        - {x: 8, y: -31}
+      tessellationDetail: 0
       bones: []
       spriteID: 898e727827f948070800000000000000
       internalID: 8107780543416363160
@@ -328,17 +389,24 @@ TextureImporter:
       name: Birch Tree-Sheet copiar_9
       rect:
         serializedVersion: 2
-        x: 447
-        y: 15
-        width: 18
-        height: 15
+        x: 432
+        y: 0
+        width: 48
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 5, y: -27}
+        - {x: 3, y: -19}
+        - {x: -5, y: -19}
+        - {x: -6, y: -28}
+        - {x: -6, y: -31}
+        - {x: -4, y: -32}
+        - {x: 5, y: -32}
+      tessellationDetail: 0
       bones: []
       spriteID: 35beb0d12dce353e0800000000000000
       internalID: -2066047416858317997
@@ -350,7 +418,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 75851ee6eadcebf4dab52b88d7f73710
     internalID: 0
     vertices: []
     indices: 
@@ -358,7 +426,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":48.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Birch Tree-Sheet copiar_0: 2498536419597013091
       Birch Tree-Sheet copiar_1: -904769818517112710

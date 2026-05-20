@@ -105,6 +105,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -112,19 +125,19 @@ TextureImporter:
       name: candle_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 10
+        width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fa44ec1a38e53f210800000000000000
+      spriteID: aad6f4c2e121cd5439afc8caeae75702
       internalID: 1365539031471768751
       vertices: []
       indices: 
@@ -134,19 +147,19 @@ TextureImporter:
       name: candle_1
       rect:
         serializedVersion: 2
-        x: 18
+        x: 16
         y: 0
-        width: 10
+        width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 485774c0b277beb20800000000000000
+      spriteID: f2b10b470c8f910489cb537e9bee3bc2
       internalID: 3164754189931214212
       vertices: []
       indices: 
@@ -156,19 +169,19 @@ TextureImporter:
       name: candle_2
       rect:
         serializedVersion: 2
-        x: 34
+        x: 32
         y: 0
-        width: 10
+        width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9720ab941041f9a00800000000000000
+      spriteID: 17eb3308244ad524295e28fd2f4b9c9b
       internalID: 765352457440723577
       vertices: []
       indices: 
@@ -178,19 +191,19 @@ TextureImporter:
       name: candle_3
       rect:
         serializedVersion: 2
-        x: 50
+        x: 48
         y: 0
-        width: 10
+        width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cccfb960f58151970800000000000000
+      spriteID: e53e04700e49f8a4ea0b80e2ac785bda
       internalID: 8724906649512049868
       vertices: []
       indices: 
@@ -200,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0017518e7752d5d44ad98a5f7d0788d5
     internalID: 0
     vertices: []
     indices: 
@@ -208,7 +221,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       candle_0: 1365539031471768751
       candle_1: 3164754189931214212

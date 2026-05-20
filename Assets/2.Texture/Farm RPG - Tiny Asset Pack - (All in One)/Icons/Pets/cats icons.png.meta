@@ -213,6 +213,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -220,12 +233,12 @@ TextureImporter:
       name: cats icons_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 67
-        width: 13
-        height: 9
+        x: 0
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -242,12 +255,12 @@ TextureImporter:
       name: cats icons_1
       rect:
         serializedVersion: 2
-        x: 18
-        y: 67
-        width: 13
-        height: 9
+        x: 16
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -264,12 +277,12 @@ TextureImporter:
       name: cats icons_2
       rect:
         serializedVersion: 2
-        x: 34
-        y: 67
-        width: 13
-        height: 9
+        x: 32
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -286,12 +299,12 @@ TextureImporter:
       name: cats icons_3
       rect:
         serializedVersion: 2
-        x: 50
-        y: 67
-        width: 13
-        height: 9
+        x: 48
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -308,12 +321,12 @@ TextureImporter:
       name: cats icons_4
       rect:
         serializedVersion: 2
-        x: 65
-        y: 66
-        width: 15
-        height: 11
+        x: 64
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -330,12 +343,12 @@ TextureImporter:
       name: cats icons_5
       rect:
         serializedVersion: 2
-        x: 81
-        y: 66
-        width: 15
-        height: 11
+        x: 80
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -352,12 +365,12 @@ TextureImporter:
       name: cats icons_6
       rect:
         serializedVersion: 2
-        x: 97
-        y: 66
-        width: 15
-        height: 11
+        x: 96
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -374,12 +387,12 @@ TextureImporter:
       name: cats icons_7
       rect:
         serializedVersion: 2
-        x: 113
-        y: 66
-        width: 15
-        height: 11
+        x: 112
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -396,12 +409,12 @@ TextureImporter:
       name: cats icons_8
       rect:
         serializedVersion: 2
-        x: 130
-        y: 67
-        width: 13
-        height: 9
+        x: 128
+        y: 64
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -418,12 +431,12 @@ TextureImporter:
       name: cats icons_9
       rect:
         serializedVersion: 2
-        x: 2
-        y: 51
-        width: 13
-        height: 9
+        x: 0
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -440,12 +453,12 @@ TextureImporter:
       name: cats icons_10
       rect:
         serializedVersion: 2
-        x: 18
-        y: 51
-        width: 13
-        height: 9
+        x: 16
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -462,12 +475,12 @@ TextureImporter:
       name: cats icons_11
       rect:
         serializedVersion: 2
-        x: 34
-        y: 51
-        width: 13
-        height: 9
+        x: 32
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -484,12 +497,12 @@ TextureImporter:
       name: cats icons_12
       rect:
         serializedVersion: 2
-        x: 50
-        y: 51
-        width: 13
-        height: 9
+        x: 48
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -506,12 +519,12 @@ TextureImporter:
       name: cats icons_13
       rect:
         serializedVersion: 2
-        x: 65
-        y: 50
-        width: 15
-        height: 11
+        x: 64
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -528,12 +541,12 @@ TextureImporter:
       name: cats icons_14
       rect:
         serializedVersion: 2
-        x: 81
-        y: 50
-        width: 15
-        height: 11
+        x: 80
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -550,12 +563,12 @@ TextureImporter:
       name: cats icons_15
       rect:
         serializedVersion: 2
-        x: 97
-        y: 50
-        width: 15
-        height: 11
+        x: 96
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -572,12 +585,12 @@ TextureImporter:
       name: cats icons_16
       rect:
         serializedVersion: 2
-        x: 113
-        y: 50
-        width: 15
-        height: 11
+        x: 112
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -594,12 +607,12 @@ TextureImporter:
       name: cats icons_17
       rect:
         serializedVersion: 2
-        x: 130
-        y: 51
-        width: 13
-        height: 9
+        x: 128
+        y: 48
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -616,12 +629,12 @@ TextureImporter:
       name: cats icons_18
       rect:
         serializedVersion: 2
-        x: 2
-        y: 35
-        width: 13
-        height: 9
+        x: 0
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -638,12 +651,12 @@ TextureImporter:
       name: cats icons_19
       rect:
         serializedVersion: 2
-        x: 18
-        y: 35
-        width: 13
-        height: 9
+        x: 16
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -660,12 +673,12 @@ TextureImporter:
       name: cats icons_20
       rect:
         serializedVersion: 2
-        x: 34
-        y: 35
-        width: 13
-        height: 9
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -682,12 +695,12 @@ TextureImporter:
       name: cats icons_21
       rect:
         serializedVersion: 2
-        x: 50
-        y: 35
-        width: 13
-        height: 9
+        x: 48
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -704,12 +717,12 @@ TextureImporter:
       name: cats icons_22
       rect:
         serializedVersion: 2
-        x: 65
-        y: 34
-        width: 15
-        height: 11
+        x: 64
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -726,12 +739,12 @@ TextureImporter:
       name: cats icons_23
       rect:
         serializedVersion: 2
-        x: 81
-        y: 34
-        width: 15
-        height: 11
+        x: 80
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -748,12 +761,12 @@ TextureImporter:
       name: cats icons_24
       rect:
         serializedVersion: 2
-        x: 97
-        y: 34
-        width: 15
-        height: 11
+        x: 96
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -770,12 +783,12 @@ TextureImporter:
       name: cats icons_25
       rect:
         serializedVersion: 2
-        x: 113
-        y: 34
-        width: 15
-        height: 11
+        x: 112
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -792,12 +805,12 @@ TextureImporter:
       name: cats icons_26
       rect:
         serializedVersion: 2
-        x: 2
-        y: 19
-        width: 13
-        height: 9
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -814,12 +827,12 @@ TextureImporter:
       name: cats icons_27
       rect:
         serializedVersion: 2
-        x: 18
-        y: 19
-        width: 13
-        height: 9
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -836,12 +849,12 @@ TextureImporter:
       name: cats icons_28
       rect:
         serializedVersion: 2
-        x: 34
-        y: 19
-        width: 13
-        height: 9
+        x: 32
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -858,12 +871,12 @@ TextureImporter:
       name: cats icons_29
       rect:
         serializedVersion: 2
-        x: 50
-        y: 19
-        width: 13
-        height: 9
+        x: 48
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -880,12 +893,12 @@ TextureImporter:
       name: cats icons_30
       rect:
         serializedVersion: 2
-        x: 65
-        y: 18
-        width: 15
-        height: 11
+        x: 64
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -902,12 +915,12 @@ TextureImporter:
       name: cats icons_31
       rect:
         serializedVersion: 2
-        x: 81
-        y: 18
-        width: 15
-        height: 11
+        x: 80
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -924,12 +937,12 @@ TextureImporter:
       name: cats icons_32
       rect:
         serializedVersion: 2
-        x: 97
-        y: 18
-        width: 15
-        height: 11
+        x: 96
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -946,12 +959,12 @@ TextureImporter:
       name: cats icons_33
       rect:
         serializedVersion: 2
-        x: 113
-        y: 18
-        width: 15
-        height: 11
+        x: 112
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -968,12 +981,12 @@ TextureImporter:
       name: cats icons_34
       rect:
         serializedVersion: 2
-        x: 2
-        y: 3
-        width: 13
-        height: 9
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -990,12 +1003,12 @@ TextureImporter:
       name: cats icons_35
       rect:
         serializedVersion: 2
-        x: 18
-        y: 3
-        width: 13
-        height: 9
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1012,12 +1025,12 @@ TextureImporter:
       name: cats icons_36
       rect:
         serializedVersion: 2
-        x: 34
-        y: 3
-        width: 13
-        height: 9
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1034,12 +1047,12 @@ TextureImporter:
       name: cats icons_37
       rect:
         serializedVersion: 2
-        x: 65
-        y: 2
-        width: 15
-        height: 11
+        x: 64
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1056,12 +1069,12 @@ TextureImporter:
       name: cats icons_38
       rect:
         serializedVersion: 2
-        x: 81
-        y: 2
-        width: 15
-        height: 11
+        x: 80
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1078,12 +1091,12 @@ TextureImporter:
       name: cats icons_39
       rect:
         serializedVersion: 2
-        x: 97
-        y: 2
-        width: 15
-        height: 11
+        x: 96
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1100,7 +1113,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4a0eb6a5afe876a4b9e82b1d973f7121
     internalID: 0
     vertices: []
     indices: 
@@ -1108,7 +1121,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       cats icons_0: -2974490637049235665
       cats icons_1: -7975517086439058488

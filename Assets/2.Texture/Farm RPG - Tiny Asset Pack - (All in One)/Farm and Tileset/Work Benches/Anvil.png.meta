@@ -201,6 +201,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -208,12 +221,12 @@ TextureImporter:
       name: Anvil_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 167
-        width: 20
-        height: 14
+        x: 0
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -230,12 +243,12 @@ TextureImporter:
       name: Anvil_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 167
-        width: 20
-        height: 14
+        x: 32
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -252,12 +265,12 @@ TextureImporter:
       name: Anvil_2
       rect:
         serializedVersion: 2
-        x: 71
-        y: 167
-        width: 20
-        height: 14
+        x: 64
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -274,12 +287,12 @@ TextureImporter:
       name: Anvil_3
       rect:
         serializedVersion: 2
-        x: 103
-        y: 167
-        width: 20
-        height: 14
+        x: 96
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -296,12 +309,12 @@ TextureImporter:
       name: Anvil_4
       rect:
         serializedVersion: 2
-        x: 135
-        y: 167
-        width: 20
-        height: 14
+        x: 128
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -318,12 +331,12 @@ TextureImporter:
       name: Anvil_5
       rect:
         serializedVersion: 2
-        x: 167
-        y: 167
-        width: 20
-        height: 14
+        x: 160
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -340,12 +353,12 @@ TextureImporter:
       name: Anvil_6
       rect:
         serializedVersion: 2
-        x: 7
-        y: 135
-        width: 20
-        height: 14
+        x: 0
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -362,12 +375,12 @@ TextureImporter:
       name: Anvil_7
       rect:
         serializedVersion: 2
-        x: 39
-        y: 135
-        width: 20
-        height: 14
+        x: 32
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -384,12 +397,12 @@ TextureImporter:
       name: Anvil_8
       rect:
         serializedVersion: 2
-        x: 71
-        y: 135
-        width: 20
-        height: 14
+        x: 64
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -406,12 +419,12 @@ TextureImporter:
       name: Anvil_9
       rect:
         serializedVersion: 2
-        x: 103
-        y: 135
-        width: 20
-        height: 14
+        x: 96
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -428,12 +441,12 @@ TextureImporter:
       name: Anvil_10
       rect:
         serializedVersion: 2
-        x: 135
-        y: 135
-        width: 20
-        height: 14
+        x: 128
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -450,12 +463,12 @@ TextureImporter:
       name: Anvil_11
       rect:
         serializedVersion: 2
-        x: 167
-        y: 135
-        width: 20
-        height: 14
+        x: 160
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -472,12 +485,12 @@ TextureImporter:
       name: Anvil_12
       rect:
         serializedVersion: 2
-        x: 7
-        y: 103
-        width: 20
-        height: 14
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -494,12 +507,12 @@ TextureImporter:
       name: Anvil_13
       rect:
         serializedVersion: 2
-        x: 39
-        y: 103
-        width: 20
-        height: 14
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -516,12 +529,12 @@ TextureImporter:
       name: Anvil_14
       rect:
         serializedVersion: 2
-        x: 71
-        y: 103
-        width: 20
-        height: 14
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -538,12 +551,12 @@ TextureImporter:
       name: Anvil_15
       rect:
         serializedVersion: 2
-        x: 103
-        y: 103
-        width: 20
-        height: 14
+        x: 96
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -560,12 +573,12 @@ TextureImporter:
       name: Anvil_16
       rect:
         serializedVersion: 2
-        x: 135
-        y: 103
-        width: 20
-        height: 14
+        x: 128
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -582,12 +595,12 @@ TextureImporter:
       name: Anvil_17
       rect:
         serializedVersion: 2
-        x: 167
-        y: 103
-        width: 20
-        height: 14
+        x: 160
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -604,12 +617,12 @@ TextureImporter:
       name: Anvil_18
       rect:
         serializedVersion: 2
-        x: 7
-        y: 71
-        width: 20
-        height: 14
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -626,12 +639,12 @@ TextureImporter:
       name: Anvil_19
       rect:
         serializedVersion: 2
-        x: 39
-        y: 71
-        width: 20
-        height: 14
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -648,12 +661,12 @@ TextureImporter:
       name: Anvil_20
       rect:
         serializedVersion: 2
-        x: 71
-        y: 71
-        width: 20
-        height: 14
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -670,12 +683,12 @@ TextureImporter:
       name: Anvil_21
       rect:
         serializedVersion: 2
-        x: 103
-        y: 71
-        width: 20
-        height: 14
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -692,12 +705,12 @@ TextureImporter:
       name: Anvil_22
       rect:
         serializedVersion: 2
-        x: 135
-        y: 71
-        width: 20
-        height: 14
+        x: 128
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -714,12 +727,12 @@ TextureImporter:
       name: Anvil_23
       rect:
         serializedVersion: 2
-        x: 167
-        y: 71
-        width: 20
-        height: 14
+        x: 160
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -736,12 +749,12 @@ TextureImporter:
       name: Anvil_24
       rect:
         serializedVersion: 2
-        x: 7
-        y: 39
-        width: 20
-        height: 14
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -758,12 +771,12 @@ TextureImporter:
       name: Anvil_25
       rect:
         serializedVersion: 2
-        x: 39
-        y: 39
-        width: 20
-        height: 14
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -780,12 +793,12 @@ TextureImporter:
       name: Anvil_26
       rect:
         serializedVersion: 2
-        x: 71
-        y: 39
-        width: 20
-        height: 14
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -802,12 +815,12 @@ TextureImporter:
       name: Anvil_27
       rect:
         serializedVersion: 2
-        x: 103
-        y: 39
-        width: 20
-        height: 14
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -824,12 +837,12 @@ TextureImporter:
       name: Anvil_28
       rect:
         serializedVersion: 2
-        x: 135
-        y: 39
-        width: 20
-        height: 14
+        x: 128
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -846,12 +859,12 @@ TextureImporter:
       name: Anvil_29
       rect:
         serializedVersion: 2
-        x: 167
-        y: 39
-        width: 20
-        height: 14
+        x: 160
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -868,12 +881,12 @@ TextureImporter:
       name: Anvil_30
       rect:
         serializedVersion: 2
-        x: 7
-        y: 7
-        width: 20
-        height: 14
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -890,12 +903,12 @@ TextureImporter:
       name: Anvil_31
       rect:
         serializedVersion: 2
-        x: 39
-        y: 7
-        width: 20
-        height: 14
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -912,12 +925,12 @@ TextureImporter:
       name: Anvil_32
       rect:
         serializedVersion: 2
-        x: 71
-        y: 7
-        width: 20
-        height: 14
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -934,12 +947,12 @@ TextureImporter:
       name: Anvil_33
       rect:
         serializedVersion: 2
-        x: 103
-        y: 7
-        width: 20
-        height: 14
+        x: 96
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -956,12 +969,12 @@ TextureImporter:
       name: Anvil_34
       rect:
         serializedVersion: 2
-        x: 135
-        y: 7
-        width: 20
-        height: 14
+        x: 128
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -978,12 +991,12 @@ TextureImporter:
       name: Anvil_35
       rect:
         serializedVersion: 2
-        x: 167
-        y: 7
-        width: 20
-        height: 14
+        x: 160
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1000,7 +1013,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ed13c574f53100c498fb280140d75f00
     internalID: 0
     vertices: []
     indices: 
@@ -1008,7 +1021,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Anvil_0: 5382197054143347865
       Anvil_1: -4799043013350739443
