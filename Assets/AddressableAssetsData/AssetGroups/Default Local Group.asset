@@ -22,13 +22,6 @@ MonoBehaviour:
     - Global
     - Origin
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 390b3360f35efcc4794d1a593713e408
-    m_Address: Origin/Prefabs/Globals/UIs/Screens/OptionScreen.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Global
-    - Origin
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 390ef74303ca1044da8d96dd04d3d1c1
     m_Address: Origin/Prefabs/Globals/UIs/Windows/InfoWindow.prefab
     m_ReadOnly: 0
