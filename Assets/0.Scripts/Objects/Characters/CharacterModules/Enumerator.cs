@@ -39,22 +39,6 @@ public enum Grade
     Length
 }
 
-//아이템 타입
-public enum ItemCategory
-{
-    Tool,           // 도구
-    Equipment,      // 의복
-    Gem,            // 보석
-    Mineral,        // 광물
-    Herb,           // 약초
-    Food,           // 요리
-    Book,           // 책
-    Structure,      // 시설물
-    Hallucinogen,   // 환각제
-    Record,         // 기록
-    Misc,            // 기타
-    Length
-}
 //도구
 public enum Tool
 {
